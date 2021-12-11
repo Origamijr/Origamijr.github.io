@@ -9,4 +9,4 @@ Independent studies with [Shlomo Dubnov](http://dub.ucsd.edu/) studying various 
 
 <img src="assets/images/fo.png" width="30%" height="YYY" class="center"/>
 
-*2/2019-present*
+*2/2019-3/2020*

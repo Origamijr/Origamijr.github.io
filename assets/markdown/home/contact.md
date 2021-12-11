@@ -1,4 +1,4 @@
-Unfortunately I don't use social media.
+Unfortunately I don't use too much social media.
 
 You can contact me via my email: origamijr@sbcglobal.net
 
