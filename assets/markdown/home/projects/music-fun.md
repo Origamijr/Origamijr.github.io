@@ -6,6 +6,7 @@ Small experimental python environment playing with real-time midi/audio analysis
 
 * Midi file loading, display, and playback
 * Real-time waveform/spectrogram from microphone
+* Real-time audio block processing
 
 Planned to include:
 

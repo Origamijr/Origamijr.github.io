@@ -10,6 +10,8 @@ My name is Kevin Huang. I recently graduated with a Masters in computer science 
 
 Asides from programming, I am also particularly fond of music. When I'm not programming, I will likely be playing piano or a rhythm game of some variety. I never try to keep my interest in music separate from my work with computers. You will find that many of my recent projects will attempt to work in the intersection between computer science and music.
 
+You can find my <a href="assets/files/Resume_2021_6.pdf" download>resume here</a> and my <a href="assets/files/CV_2021_12.pdf" download>CV here</a>
+
 Credit to [Xuan](https://www.instagram.com/hua.xuann/?hl=en) for my beautiful website icon.
 
 *Last Updated 12/11/2021*
