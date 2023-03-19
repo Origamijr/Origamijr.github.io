@@ -1,4 +1,4 @@
-## Music Fun (In Progress)
+## Music Fun (On Hold)
 
 [Github Here](https://github.com/Origamijr/MusicFun)
 
@@ -18,4 +18,4 @@ Planned to include:
 <img src="assets/images/music_fun.png" width="100%" height="YYY" class="center"/>
 <img src="assets/images/music_fun_1.png" width="100%" height="YYY" class="center"/>
 
-*10/2019-present*
+*10/2019-present?*

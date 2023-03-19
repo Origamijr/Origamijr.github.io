@@ -1,11 +1,13 @@
-Unfortunately I don't use too much social media.
+For academic inquiries, contact me at kevinyhu@usc.edu
 
-You can contact me via my email: origamijr@sbcglobal.net
+Otherwise I can be contacted at origamijr@sbcglobal.net
 
 Here's other random sites I frequent:
 
 [Github](https://github.com/Origamijr)
 
 [My Anime List](https://myanimelist.net/profile/Nessun)
+
+[Minesweeper Online](https://minesweeper.online/player/1896875)
 
 [osu!](https://osu.ppy.sh/u/8350142)

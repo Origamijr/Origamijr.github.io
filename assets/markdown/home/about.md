@@ -4,14 +4,14 @@
 
 ## Introduction
 
-Hi. Welcome to my site. Forgive the poor design as I am quite a novice at web development. Regardless, I am a big fan of the DIY mentality, so I thought I'd have a go at building from scratch (using Angular as a framework).
+Hi. Welcome to my site. Forgive the poor design as I am quite a novice at web development.
 
-My name is Kevin Huang. I recently graduated with a Masters in computer science from UCSD. As web development is clearly not my strong suit, I have a particular interest in **Machine Learning** as it applies to audio processing (analysis and synthesis) in the domains of music and speech. I also have some interest in Nautral Language Processing and Computer Graphics (particularly real-time graphics, animation, and virtual reality).
+My name is Kevin Huang. I am currently working on a PhD in Electrical Engineering at University of Southern California. I've obtained a Masters (2021) and a Bachelors (2020) in Computer Science at UCSD. I have a particular interest in **Machine Learning** as it applies to audio processing (analysis and synthesis) in the domains of music and speech. I also have some interest in Computer Graphics on the side (particularly real-time graphics, animation, and virtual reality).
 
-Asides from programming, I am also particularly fond of music. When I'm not programming, I will likely be playing piano or a rhythm game of some variety. I never try to keep my interest in music separate from my work with computers. You will find that many of my recent projects will attempt to work in the intersection between computer science and music.
+Asides from programming, I enjoy playing piano and playing games. Although I am classically trained, taking piano lessons since elementary school, I more often than not tend to play anime song covers on piano. As for games, I mainly play gacha games, rhythm games, minesweeper, or whatever my friends are playing at the time.
 
-You can find my <a href="assets/files/Resume_2021_6.pdf" download>resume here</a> and my <a href="assets/files/CV_2021_12.pdf" download>CV here</a>
+You can find my <a href="assets/files/Resume.pdf" download>resume here</a> and my <a href="assets/files/CV.pdf" download>CV here</a> (may be out of date).
 
 Credit to [Xuan](https://www.instagram.com/hua.xuann/?hl=en) for my beautiful website icon.
 
-*Last Updated 12/11/2021*
+*Last Updated 3/19/2023*
