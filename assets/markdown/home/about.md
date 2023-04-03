@@ -14,4 +14,6 @@ You can find my <a href="assets/files/Resume.pdf" download>resume here</a> and m
 
 Credit to [Xuan](https://www.instagram.com/hua.xuann/?hl=en) for my beautiful website icon.
 
+I, uh, haven't figured out how to make this website work on mobile. Maybe I'll figure out this summer.
+
 *Last Updated 3/19/2023*
