@@ -10,7 +10,7 @@ Ideas are collected and tested in python.
 
 [Github Here](https://github.com/Origamijr/minesweeper-pygame) (fork of someone else's minesweeper GUI)
 
-<a href="assets/files/Minesweeper.pdf" download>Paper Here (WIP)</a>
+<a href="assets/files/Minesweeper.pdf">Paper Here (WIP)</a>
 
 <img src="assets/images/minesweeper-math.PNG" width="90%" height="YYY" class="center"/>
 
