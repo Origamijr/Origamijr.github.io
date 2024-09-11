@@ -1,9 +1,11 @@
-## RASPPPY
+## RASPPPy (Real-time Audio Signal Processing Patcher for Python)
 
-Experimental visual programming language based on Pure Data for creating and running audio (and potentially other multimedia) real-time applications created in Python.
+A visual programming language for creating and running audio (and potentially other multimedia) real-time applications created in Python. 
+
+Effectively a Pure Data ripoff that's easier to extend via python.
 
 [Github Here](https://github.com/Origamijr/RASPPPy)
 
-<img src="assets/images/raspppy.png" width="50%" height="YYY" class="center"/>
+<img src="assets/images/phasor_loopback.PNG" width="70%" height="YYY" class="center"/>
 
-*7/2023-present*
+*8/2023-present*
