@@ -347,12 +347,22 @@
 
         async function showBlogPost(filename) {
             try {
-                const response = await fetch(`assets/markdown/blog/${filename}`);
-                if (!response.ok) {
-                    console.error('Failed to load blog post');
-                    return;
+                let content;
+                let response = await fetch(`assets/markdown/blog/${filename}`);
+                if (response.ok) {
+                    content = await response.text();
+                } else {
+                    // Fallback to GitHub raw content
+                    const githubUrl = `https://raw.githubusercontent.com/Origamijr/Origamijr.github.io/master/assets/markdown/blog/${filename}`;
+                    response = await fetch(githubUrl);
+                    if (!response.ok) {
+                        console.error('Failed to load blog post from both local and GitHub');
+                        return;
+                    }
+                    console.log(`Loaded ${filename} from GitHub fallback`);
+                    content = await response.text();
                 }
-                const content = await response.text();
+                
                 const { html } = markdownToHtml(content);
                 
                 // Find post metadata

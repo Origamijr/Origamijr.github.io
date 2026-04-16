@@ -67,10 +67,22 @@
         async function loadProjectContent(filename) {
             try {
                 const response = await fetch(`assets/markdown/projects/${filename}`);
-                if (!response.ok) return null;
-                return await response.text();
+                if (response.ok) {
+                    return await response.text();
+                }
+                throw new Error('Local fetch failed');
             } catch (e) {
-                console.error('Error loading project content:', e);
+                // Fallback to GitHub raw content
+                try {
+                    const githubUrl = `https://raw.githubusercontent.com/Origamijr/Origamijr.github.io/master/assets/markdown/projects/${filename}`;
+                    const response = await fetch(githubUrl);
+                    if (response.ok) {
+                        console.log(`Loaded ${filename} from GitHub fallback`);
+                        return await response.text();
+                    }
+                } catch (githubError) {
+                    console.error(`Error loading project content for ${filename}:`, githubError);
+                }
                 return null;
             }
         }
