@@ -182,7 +182,7 @@
       "purpose": "research",
       "collaborators": "collab",
       "languages": "python",
-      "technologies": "",
+      "technologies": "pure data/max msp",
       "other": [
         ""
       ],
@@ -240,7 +240,10 @@
         "solo",
         "open"
       ],
-      "languages": "python",
+      "languages": [
+        "python",
+        "js"
+      ],
       "technologies": "",
       "other": [
         "framework"
