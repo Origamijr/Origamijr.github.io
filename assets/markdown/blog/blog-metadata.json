@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "filename": "20260416_test.md",
+      "title": "Test Post",
+      "date": "2026-04-16",
+      "year_month": "2026-04",
+      "tags": [
+        "website"
+      ],
+      "preview": "Testing a post made directly from github to see if workflows will automatically update the metadata, subsequently posting this directly to the website with the correct date and tags."
+    },
+    {
       "filename": "20260415_recon.md",
       "title": "Site Reconstruction",
       "date": "2026-04-15",
@@ -21,5 +31,5 @@
       "preview": "Testing"
     }
   ],
-  "generated": "2026-04-16T07:41:27.284039"
+  "generated": "2026-04-16T07:51:12.991528"
 }
