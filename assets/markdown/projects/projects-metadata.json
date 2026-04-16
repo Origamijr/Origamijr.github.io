@@ -1,0 +1,333 @@
+{
+  "projects": [
+    {
+      "filename": "125-cyber-city.md",
+      "topic": "graphics",
+      "status": "complete",
+      "purpose": "class",
+      "collaborators": "collab",
+      "languages": "c++",
+      "technologies": "",
+      "other": [
+        "game"
+      ],
+      "date": "6/2020",
+      "feature": 1
+    },
+    {
+      "filename": "143-virtual-env.md",
+      "topic": "graphics",
+      "status": "complete",
+      "purpose": "class",
+      "collaborators": "solo",
+      "languages": "c#",
+      "technologies": [
+        "unity",
+        "blender"
+      ],
+      "other": [
+        "game",
+        "vr"
+      ],
+      "date": "9/2019-12/2019",
+      "feature": 0
+    },
+    {
+      "filename": "172-softsynth.md",
+      "topic": "audio",
+      "status": "complete",
+      "purpose": "class",
+      "collaborators": "solo",
+      "languages": "",
+      "technologies": "pure data/max msp",
+      "other": [
+        ""
+      ],
+      "date": "3/2019-6/2019",
+      "feature": 0
+    },
+    {
+      "filename": "203-snmf.md",
+      "topic": "audio",
+      "status": "complete",
+      "purpose": "research",
+      "collaborators": "collab",
+      "languages": "python",
+      "technologies": "",
+      "other": [
+        ""
+      ],
+      "date": "3/2021",
+      "feature": 0
+    },
+    {
+      "filename": "arts.md",
+      "topic": [
+        "audio",
+        "ai"
+      ],
+      "status": "progress",
+      "purpose": "research",
+      "collaborators": "collab",
+      "languages": "",
+      "technologies": "",
+      "other": [
+        ""
+      ],
+      "date": "9/2024-present",
+      "feature": 0
+    },
+    {
+      "filename": "bird.md",
+      "topic": "misc",
+      "status": "complete",
+      "purpose": "contest",
+      "collaborators": "collab",
+      "languages": "c#",
+      "technologies": "unity",
+      "other": [
+        "game",
+        "vr"
+      ],
+      "date": "2/2018",
+      "feature": 0
+    },
+    {
+      "filename": "discord-bots.md",
+      "topic": "misc",
+      "status": "progress",
+      "purpose": "personal",
+      "collaborators": "solo",
+      "languages": [
+        "python",
+        "c#",
+        "f#"
+      ],
+      "technologies": "",
+      "other": [
+        "game"
+      ],
+      "date": "12/2017-present",
+      "feature": 0
+    },
+    {
+      "filename": "dmid.md",
+      "topic": [
+        "audio",
+        "ai"
+      ],
+      "status": "complete",
+      "purpose": "research",
+      "collaborators": "collab",
+      "languages": "python",
+      "technologies": "",
+      "other": [
+        ""
+      ],
+      "date": "5/2021",
+      "feature": 0
+    },
+    {
+      "filename": "inf-dungeon-dive.md",
+      "topic": "misc",
+      "status": "hiatus",
+      "purpose": "contest",
+      "collaborators": "solo",
+      "languages": "c#",
+      "technologies": "unity",
+      "other": [
+        "game"
+      ],
+      "date": "8/2019",
+      "feature": 0
+    },
+    {
+      "filename": "klatt-synth.md",
+      "topic": "audio",
+      "status": "complete",
+      "purpose": "class",
+      "collaborators": "solo",
+      "languages": "c",
+      "technologies": "pure data/max msp",
+      "other": [
+        ""
+      ],
+      "date": "3/2020",
+      "feature": 1
+    },
+    {
+      "filename": "lasidad.md",
+      "topic": [
+        "audio",
+        "ai"
+      ],
+      "status": "progress",
+      "purpose": "research",
+      "collaborators": "collab",
+      "languages": "",
+      "technologies": "",
+      "other": [
+        ""
+      ],
+      "date": "1/2023-present",
+      "feature": 0
+    },
+    {
+      "filename": "machine-improv.md",
+      "topic": [
+        "audio",
+        "ai"
+      ],
+      "status": "complete",
+      "purpose": "research",
+      "collaborators": "collab",
+      "languages": "python",
+      "technologies": "",
+      "other": [
+        ""
+      ],
+      "date": "2/2019-3/2020",
+      "feature": 0
+    },
+    {
+      "filename": "minesweeper.md",
+      "topic": "misc",
+      "status": "progress",
+      "purpose": "personal",
+      "collaborators": "solo",
+      "languages": "python",
+      "technologies": "",
+      "other": [
+        ""
+      ],
+      "date": "12/2022-present",
+      "feature": 4
+    },
+    {
+      "filename": "music-fun.md",
+      "topic": "audio",
+      "status": "complete",
+      "purpose": "personal",
+      "collaborators": "solo",
+      "languages": "python",
+      "technologies": "opengl",
+      "other": [
+        ""
+      ],
+      "date": "10/2019-present",
+      "feature": 0
+    },
+    {
+      "filename": "pure-mania.md",
+      "topic": "music",
+      "status": "complete",
+      "purpose": "class",
+      "collaborators": "solo",
+      "languages": "",
+      "technologies": "pure data/max msp",
+      "other": [
+        "game"
+      ],
+      "date": "3/2019",
+      "feature": 1
+    },
+    {
+      "filename": "raspppy.md",
+      "topic": "audio",
+      "status": "progress",
+      "purpose": "personal",
+      "collaborators": [
+        "solo",
+        "open"
+      ],
+      "languages": "python",
+      "technologies": "",
+      "other": [
+        "framework"
+      ],
+      "date": "8/2023-present",
+      "feature": 2
+    },
+    {
+      "filename": "span.md",
+      "topic": [
+        "audio",
+        "ai"
+      ],
+      "status": "progress",
+      "purpose": "research",
+      "collaborators": "collab",
+      "languages": "",
+      "technologies": "",
+      "other": [
+        ""
+      ],
+      "date": "1/2023-present",
+      "feature": 0
+    },
+    {
+      "filename": "spatial-viz.md",
+      "topic": "graphics",
+      "status": "complete",
+      "purpose": "research",
+      "collaborators": "collab",
+      "languages": "c++",
+      "technologies": "opengl",
+      "other": [
+        "vr"
+      ],
+      "date": "3/2018-6/2018",
+      "feature": 0
+    },
+    {
+      "filename": "spec2spec.md",
+      "topic": "audio",
+      "status": "complete",
+      "purpose": "class",
+      "collaborators": "collab",
+      "languages": "python",
+      "technologies": "",
+      "other": [
+        ""
+      ],
+      "date": "6/2020",
+      "feature": 0
+    },
+    {
+      "filename": "tabletop-lab.md",
+      "topic": "ai",
+      "status": "progress",
+      "purpose": "personal",
+      "collaborators": [
+        "solo",
+        "open"
+      ],
+      "languages": [
+        "python",
+        "lua",
+        "js"
+      ],
+      "technologies": "",
+      "other": [
+        "game",
+        "framework"
+      ],
+      "date": "12/2025-present",
+      "feature": 5
+    },
+    {
+      "filename": "venice-canals.md",
+      "topic": "graphics",
+      "status": "complete",
+      "purpose": "class",
+      "collaborators": "collab",
+      "languages": "c++",
+      "technologies": "opengl",
+      "other": [
+        ""
+      ],
+      "date": "3/2018",
+      "feature": 0
+    }
+  ]
+}

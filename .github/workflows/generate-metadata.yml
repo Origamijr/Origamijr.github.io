@@ -1,0 +1,41 @@
+name: Generate Metadata
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'assets/markdown/blog/**'
+      - 'assets/markdown/projects/**'
+      - 'generate_*.py'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Generate blog metadata
+      run: python generate_blog_metadata.py
+    
+    - name: Generate projects metadata
+      run: python generate_projects_metadata.py
+    
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add assets/markdown/blog/blog-metadata.json assets/markdown/projects/projects-metadata.json
+        if git diff --quiet --cached; then
+          echo "No metadata changes"
+        else
+          git commit -m "chore: regenerate metadata files"
+          git push
+        fi

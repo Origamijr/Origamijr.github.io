@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "filename": "20260415_recon.md",
+      "title": "Site Reconstruction",
+      "date": "2026-04-15",
+      "year_month": "2026-04",
+      "tags": [
+        "website"
+      ],
+      "preview": "After about 2 years of site inactivity, Finally got around to redoing the site. For a while I've wanted to abandon my [old site](https://github.com/Origamijr/CapitalistManifestoDesu), which was built using the Angular framework. That was mostly because it was built during an internship where I was using Angular. Over time, I've grown..."
+    },
+    {
+      "filename": "20260415_first.md",
+      "title": "First Post",
+      "date": "2026-04-14",
+      "year_month": "2026-04",
+      "tags": [
+        "website"
+      ],
+      "preview": "Testing"
+    }
+  ],
+  "generated": "2026-04-15T23:34:24.535632"
+}

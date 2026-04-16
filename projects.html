@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin's website</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="projects.css">
+    <script src="utils.js"></script>
+    <script src="nav.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="projects-container">
+        <div class="container">
+            <h1>Projects</h1>
+            
+            <div class="filter-panel">
+                <div class="filter-header" onclick="toggleFilterPanel()">
+                    <span>Filters</span>
+                    <span class="filter-toggle">+</span>
+                </div>
+                <div class="filter-content" id="filter-content">
+                    <div class="filter-groups" id="filter-groups"></div>
+                </div>
+            </div>
+
+            <div id="projects-list"></div>
+        </div>
+    </div>
+
+    <script>
+        let allProjects = [];
+        let projectsContent = {};
+        let selectedFilters = new Set();
+
+        const predefinedFilters = {
+            topic: ['graphics', 'audio', 'ai', 'misc'],
+            status: ['complete', 'progress', 'hiatus'],
+            purpose: ['personal', 'class', 'contest', 'research'],
+            collaborators: ['solo', 'collab', 'open'],
+            languages: ['python', 'c++', 'c#', 'c', 'lua', 'js'],
+            technologies: ['unity', 'blender', 'opengl', 'pure data/max msp'],
+            other: ['featured', 'framework', 'game', 'vr']
+        };
+
+        const categoryNames = {
+            topic: 'Topic', status: 'Status', purpose: 'Purpose',
+            collaborators: 'Collaborators', languages: 'Languages', 
+            technologies: 'Technologies', other: 'Other'
+        };
+
+        async function loadProjectsMetadata() {
+            try {
+                const response = await fetch('assets/markdown/projects/projects-metadata.json');
+                if (!response.ok) return [];
+                const data = await response.json();
+                return data.projects || [];
+            } catch (e) {
+                console.error('Error loading projects metadata:', e);
+                return [];
+            }
+        }
+
+        async function loadProjectContent(filename) {
+            try {
+                const response = await fetch(`assets/markdown/projects/${filename}`);
+                if (!response.ok) return null;
+                return await response.text();
+            } catch (e) {
+                console.error('Error loading project content:', e);
+                return null;
+            }
+        }
+
+        function getFirstDate(dateStr) {
+            // Extract first date in format M/YYYY or MM/YYYY
+            const match = dateStr.match(/^(\d{1,2})\/(\d{4})/);
+            if (!match) return 0;
+            const month = parseInt(match[1], 10);
+            const year = parseInt(match[2], 10);
+            // Return a comparable number: year * 100 + month
+            return year * 100 + month;
+        }
+
+        function buildFilterPanel() {
+            const filterContent = document.getElementById('filter-groups');
+            filterContent.innerHTML = '';
+
+            Object.entries(predefinedFilters).forEach(([category, tags]) => {
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'filter-group';
+
+                const optionsDiv = document.createElement('div');
+                optionsDiv.className = 'filter-options';
+                
+                const titleSpan = document.createElement('span');
+                titleSpan.className = 'filter-group-title';
+                titleSpan.textContent = categoryNames[category] + ':';
+                optionsDiv.appendChild(titleSpan);
+                
+                tags.forEach(tag => {
+                    const button = document.createElement('button');
+                    button.className = 'filter-button';
+                    button.textContent = tag;
+                    button.dataset.category = category;
+                    button.dataset.tag = tag;
+
+                    if (category === 'other' && tag === 'featured') {
+                        button.classList.add('active');
+                        selectedFilters.add(`${category}:${tag}`);
+                    }
+
+                    button.addEventListener('click', (e) => {
+                        e.target.classList.toggle('active');
+                        const filterKey = `${category}:${tag}`;
+                        if (e.target.classList.contains('active')) {
+                            selectedFilters.add(filterKey);
+                        } else {
+                            selectedFilters.delete(filterKey);
+                        }
+                        updateDisplay();
+                    });
+
+                    optionsDiv.appendChild(button);
+                });
+
+                groupDiv.appendChild(optionsDiv);
+                filterContent.appendChild(groupDiv);
+            });
+        }
+
+        async function updateDisplay() {
+            let projects = allProjects;
+
+            if (selectedFilters.size > 0) {
+                // Group filters by category
+                const filtersByCategory = {};
+                Array.from(selectedFilters).forEach(filter => {
+                    const [cat, val] = filter.split(':');
+                    if (!filtersByCategory[cat]) {
+                        filtersByCategory[cat] = [];
+                    }
+                    filtersByCategory[cat].push(val);
+                });
+
+                // Filter: OR within categories, AND across categories
+                projects = projects.filter(p => {
+                    return Object.entries(filtersByCategory).every(([cat, vals]) => {
+                        if (cat === 'other') {
+                            // For 'other' category, check if any of the selected values match
+                            return vals.some(val => {
+                                if (val === 'featured') return p.feature;
+                                // For other values, check in the 'other' field
+                                return p.other && p.other.includes(val);
+                            });
+                        }
+                        
+                        const fieldVal = p[cat];
+                        if (!fieldVal) return false;
+                        
+                        // OR logic: check if field matches ANY of the selected values in this category
+                        return vals.some(val => {
+                            return Array.isArray(fieldVal) ? fieldVal.includes(val) : fieldVal === val;
+                        });
+                    });
+                });
+            }
+
+            projects.sort((a, b) => {
+                const aFeat = a.feature ? a.feature : 0;
+                const bFeat = b.feature ? b.feature : 0;
+                return bFeat - aFeat || getFirstDate(b.date) - getFirstDate(a.date);
+            });
+
+            const list = document.getElementById('projects-list');
+            list.innerHTML = '';
+            
+            for (const project of projects) {
+                if (!projectsContent[project.filename]) {
+                    projectsContent[project.filename] = await loadProjectContent(project.filename);
+                }
+                
+                const content = projectsContent[project.filename];
+                const { html } = markdownToHtml(content);
+                
+                const projectDiv = document.createElement('div');
+                projectDiv.className = 'project-item';
+                projectDiv.innerHTML = `<div class="markdown-content">${html}</div>`;
+                
+                // Add project metadata footer
+                const metaDiv = document.createElement('div');
+                metaDiv.className = 'project-meta';
+                
+                // Date
+                const dateEl = document.createElement('time');
+                dateEl.className = 'project-date';
+                dateEl.textContent = project.date;
+                metaDiv.appendChild(dateEl);
+                
+                // Filter tags (topic, status, purpose, collaborators, languages, technologies, other)
+                const tagsDiv = document.createElement('div');
+                tagsDiv.className = 'project-tags';
+                
+                const allTags = [
+                    ...(Array.isArray(project.topic) ? project.topic : [project.topic]),
+                    ...(Array.isArray(project.status) ? project.status : [project.status]),
+                    ...(Array.isArray(project.purpose) ? project.purpose : [project.purpose]),
+                    ...(Array.isArray(project.collaborators) ? project.collaborators : [project.collaborators]),
+                    ...(Array.isArray(project.languages) ? project.languages : [project.languages]),
+                    ...(Array.isArray(project.technologies) ? project.technologies : [project.technologies]),
+                    ...(project.other ? (Array.isArray(project.other) ? project.other : [project.other]) : [])
+                ].filter(Boolean);
+                
+                allTags.forEach(tag => {
+                    const tagEl = document.createElement('span');
+                    tagEl.className = 'tag';
+                    tagEl.textContent = tag;
+                    tagsDiv.appendChild(tagEl);
+                });
+                
+                metaDiv.appendChild(tagsDiv);
+                projectDiv.appendChild(metaDiv);
+                list.appendChild(projectDiv);
+            }
+        }
+
+        async function init() {
+            allProjects = await loadProjectsMetadata();
+            if (!allProjects || allProjects.length === 0) {
+                document.getElementById('projects-list').innerHTML = '<p>No projects yet.</p>';
+                return;
+            }
+
+            buildFilterPanel();
+            updateDisplay();
+        }
+
+        document.getElementById('navbar').innerHTML = createNavbar('Projects');
+        document.querySelector('.filter-header').addEventListener('click', function() {
+            const content = document.getElementById('filter-content');
+            content.classList.toggle('expanded');
+            this.querySelector('.filter-toggle').textContent = content.classList.contains('expanded') ? '−' : '+';
+        });
+        init();
+    </script>
+</body>
+</html>

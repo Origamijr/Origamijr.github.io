@@ -1,49 +1,24 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>Kevin's Page</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124490875-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-124490875-1');
-  </script>
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBCTAJ2BHlHdlcN6FvHAw4aGCC4JTYxXmo",
-    authDomain: "capitalistmanifestodesu.firebaseapp.com",
-    databaseURL: "https://capitalistmanifestodesu.firebaseio.com",
-    projectId: "capitalistmanifestodesu",
-    storageBucket: "capitalistmanifestodesu.appspot.com",
-    messagingSenderId: "729618447004",
-    appId: "1:729618447004:web:2db293fe17e21beb308b59",
-    measurementId: "G-DC3ZEDT4SG"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
-<style>:root{--page-color:#2c2f33}body{margin:0;padding:0}html{background:#4e4c5c;background-size:cover;font-family:Calibri}</style><link rel="stylesheet" href="styles.d07c7c23522bcbfc.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.d07c7c23522bcbfc.css"></noscript></head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin's Website</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="utils.js"></script>
+    <script src="nav.js"></script>
+</head>
 <body>
-  <app-root></app-root>
-<script src="runtime.b998e3473f6c8457.js" type="module"></script><script src="polyfills.f12e0e997f6b5b51.js" type="module"></script><script src="scripts.8cea4dce19f9c237.js" defer></script><script src="main.e6530b470c89c934.js" type="module"></script>
+    <div id="navbar"></div>
 
-</body></html>
+    <div class="container">
+        Page not found
+    </div>
+
+    <script>
+        document.getElementById('navbar').innerHTML = createNavbar();
+    </script>
+</body>
+</html>

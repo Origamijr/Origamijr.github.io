@@ -1,0 +1,337 @@
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.blog-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 2rem;
+}
+
+.page-header {
+    padding-bottom: 2rem;
+}
+
+.blog-sidebar {
+    background: #dbdbdb;
+    padding: 1.4rem;
+    height: fit-content;
+    position: sticky;
+    top: 1rem;
+}
+
+.search-box {
+    margin-bottom: 1rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border);
+    font-size: 1rem;
+}
+
+.filter-section {
+    margin-top: 1rem;
+}
+
+.filter-section h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.date-year {
+    margin-top: 0.5rem;
+}
+
+.date-toggle {
+    background: none;
+    border: none;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+}
+
+.date-toggle:hover {
+    text-decoration: underline;
+}
+
+.date-months {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+}
+
+.date-months.collapsed {
+    display: none;
+}
+
+.date-month {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.filter-checkbox {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.filter-checkbox input {
+    display: none;
+}
+
+.filter-checkbox input + span {
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    background: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+.filter-checkbox input:checked + span {
+    background: #0066cc;
+    color: white;
+    border-color: #0066cc;
+}
+
+.date-month input + span {
+    display: block;
+    padding: 0.3rem 0.6rem;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    font-size: 0.9rem;
+}
+
+.date-month input:checked + span {
+    background: #e8f0ff;
+    color: #0066cc;
+    font-weight: 500;
+}
+
+.blog-content {
+    min-height: 400px;
+}
+
+.blog-post {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+.blog-post h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.75rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.blog-post h2 a {
+    color: var(--color-text-accent);
+    text-decoration: none;
+}
+
+.blog-post h2 a:hover {
+    text-decoration: underline;
+}
+
+.post-header {
+    padding-top: 1rem;
+}
+
+.post-date {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-preview {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    flex-wrap: wrap;
+}
+
+.page-link {
+    color: var(--color-text-accent);
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    background: #fff;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.page-link:hover {
+    background: #f0f0f0;
+    border-color: var(--color-text-accent);
+}
+
+.page-link.current {
+    background: var(--color-text-accent);
+    color: #000;
+    border-color: var(--color-text-accent);
+    font-weight: bold;
+}
+
+.page-ellipsis {
+    color: #666;
+    padding: 0.3rem 0.2rem;
+    font-size: 0.9rem;
+}
+
+#page-info {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .blog-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-sidebar {
+        position: static;
+        order: 2;
+        padding: 1rem;
+    }
+
+    .blog-content {
+        order: 1;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+    }
+
+    .search-box input {
+        font-size: 1rem;
+    }
+
+    .filter-checkbox input + span {
+        word-break: break-word;
+        font-size: 0.85rem;
+        padding: 0.2rem 0.3rem;
+    }
+
+    .post-tags {
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .blog-sidebar {
+        padding: 0.75rem;
+    }
+
+    .filter-checkbox {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 0.35rem;
+    }
+
+    .filter-checkbox input + span {
+        display: block;
+        word-break: break-word;
+        font-size: 0.8rem;
+        padding: 0.25rem 0.35rem;
+    }
+
+    .search-box input {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .date-toggle {
+        font-size: 0.9rem;
+        padding: 0.2rem 0;
+    }
+
+    .date-month input + span {
+        font-size: 0.85rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.3rem;
+        word-break: break-word;
+    }
+
+    .post-preview {
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+
+    .post-header {
+        padding-top: 0.5rem;
+    }
+
+    #post-title {
+        font-size: 1.4rem;
+        word-break: break-word;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.15rem 0.35rem;
+    }
+}

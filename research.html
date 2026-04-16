@@ -6,6 +6,7 @@
     <title>Kevin's Website</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
     <script src="utils.js"></script>
     <script src="nav.js"></script>
 </head>
@@ -13,16 +14,12 @@
     <div id="navbar"></div>
 
     <div class="container">
-        <div id="home-content" class="markdown-content"></div>
-        
-        <h1>contact</h1>
-        <div id="contact-content" class="markdown-content"></div>
+        <div id="research-content" class="markdown-content"></div>
     </div>
 
     <script>
-        document.getElementById('navbar').innerHTML = createNavbar('Home');
-        window.addEventListener('load', loadMarkdown('assets/markdown/home.md', 'home-content'));
-        window.addEventListener('load', loadMarkdown('assets/markdown/contact.md', 'contact-content'));
+        document.getElementById('navbar').innerHTML = createNavbar('Research');
+        window.addEventListener('load', loadMarkdown('assets/markdown/research.md', 'research-content'));
     </script>
 </body>
 </html>

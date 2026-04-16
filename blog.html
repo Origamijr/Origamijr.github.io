@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin's Website</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="blog.css">
+    <script src="utils.js"></script>
+    <script src="nav.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+    
+    <div class="container">
+        
+        <div class="blog-layout">
+            <main class="blog-content">
+                <div id="view-list">            
+                    <h1 class="page-header">Blog</h1>
+                    <div id="posts-list"></div>
+                    <div class="pagination" id="pagination"></div>
+                </div>
+
+                <div id="view-post" style="display: none;">
+                    <a id="back-link" href="#">← Back</a>
+                    <div id="post-header" class="post-header">
+                        <h1 id="post-title"></h1>
+                        <time id="post-date" class="post-date"></time>
+                        <div id="post-tags" class="post-tags"></div>
+                    </div>
+                    <article id="post-content" class="markdown-content"></article>
+                </div>
+            </main>
+            
+            <aside class="blog-sidebar">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Search posts...">
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Tags</h3>
+                    <div id="tags-filter"></div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Date</h3>
+                    <div id="date-filter"></div>
+                </div>
+            </aside>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <script>
+        let allPosts = [];
+        let filteredPosts = [];
+        let selectedTags = new Set();
+        let selectedDates = new Set();
+        let searchQuery = '';
+        
+        const POSTS_PER_PAGE = 5;
+        let currentPage = 1;
+
+        async function loadBlogMetadata() {
+            try {
+                const response = await fetch('assets/markdown/blog/blog-metadata.json');
+                if (!response.ok) return null;
+                const data = await response.json();
+                return data.posts || [];
+            } catch (e) {
+                console.error('Error loading blog metadata:', e);
+                return [];
+            }
+        }
+
+        function buildTagsFilter() {
+            const tagsSet = new Set();
+            allPosts.forEach(post => {
+                post.tags.forEach(tag => tagsSet.add(tag));
+            });
+
+            const container = document.getElementById('tags-filter');
+            container.innerHTML = '';
+            
+            Array.from(tagsSet).sort().forEach(tag => {
+                const label = document.createElement('label');
+                label.className = 'filter-checkbox';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = tag;
+                checkbox.addEventListener('change', () => {
+                    if (checkbox.checked) {
+                        selectedTags.add(tag);
+                    } else {
+                        selectedTags.delete(tag);
+                    }
+                    currentPage = 1;
+                    applyFilters();
+                });
+                
+                const span = document.createElement('span');
+                span.textContent = tag;
+                
+                label.appendChild(checkbox);
+                label.appendChild(span);
+                container.appendChild(label);
+            });
+        }
+
+        function buildDateFilter() {
+            const datesMap = {};
+            allPosts.forEach(post => {
+                if (post.year_month) {
+                    const [year, month] = post.year_month.split('-');
+                    if (!datesMap[year]) datesMap[year] = new Set();
+                    datesMap[year].add(month);
+                }
+            });
+
+            const container = document.getElementById('date-filter');
+            container.innerHTML = '';
+            
+            Object.keys(datesMap).sort().reverse().forEach(year => {
+                const yearDiv = document.createElement('div');
+                yearDiv.className = 'date-year';
+                
+                const monthsDiv = document.createElement('div');
+                monthsDiv.className = 'date-months collapsed';
+                
+                const yearToggle = document.createElement('button');
+                yearToggle.className = 'date-toggle';
+                yearToggle.textContent = '▶ ' + year;
+                yearToggle.addEventListener('click', () => {
+                    monthsDiv.classList.toggle('collapsed');
+                    yearToggle.textContent = monthsDiv.classList.contains('collapsed') ? '▶ ' + year : '▼ ' + year;
+                });
+                
+                Array.from(datesMap[year]).sort().reverse().forEach(month => {
+                    const label = document.createElement('label');
+                    label.className = 'filter-checkbox date-month';
+                    
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.value = `${year}-${month}`;
+                    checkbox.addEventListener('change', () => {
+                        if (checkbox.checked) {
+                            selectedDates.add(`${year}-${month}`);
+                        } else {
+                            selectedDates.delete(`${year}-${month}`);
+                        }
+                        currentPage = 1;
+                        applyFilters();
+                    });
+                    
+                    const span = document.createElement('span');
+                    const monthName = new Date(`${year}-${month}-01`).toLocaleDateString('en-US', { month: 'long' });
+                    span.textContent = monthName;
+                    
+                    label.appendChild(checkbox);
+                    label.appendChild(span);
+                    monthsDiv.appendChild(label);
+                });
+                
+                yearDiv.appendChild(yearToggle);
+                yearDiv.appendChild(monthsDiv);
+                container.appendChild(yearDiv);
+            });
+        }
+
+        function applyFilters() {
+            filteredPosts = allPosts.filter(post => {
+                // Search filter
+                if (searchQuery) {
+                    const query = searchQuery.toLowerCase();
+                    if (!post.title.toLowerCase().includes(query) && 
+                        !post.preview.toLowerCase().includes(query)) {
+                        return false;
+                    }
+                }
+                
+                // Tag filter
+                if (selectedTags.size > 0) {
+                    const hasTag = post.tags.some(tag => selectedTags.has(tag));
+                    if (!hasTag) return false;
+                }
+                
+                // Date filter
+                if (selectedDates.size > 0) {
+                    if (!selectedDates.has(post.year_month)) return false;
+                }
+                
+                return true;
+            });
+            
+            currentPage = 1;
+            displayPosts();
+        }
+
+        function displayPosts() {
+            const start = (currentPage - 1) * POSTS_PER_PAGE;
+            const end = start + POSTS_PER_PAGE;
+            const pagePosts = filteredPosts.slice(start, end);
+
+            const container = document.getElementById('posts-list');
+            container.innerHTML = pagePosts.map(post => `
+                <article class="blog-post" data-filename="${encodeURIComponent(post.filename)}">
+                    <h2><a href="#">${escapeHtml(post.title)}</a></h2>
+                    <time class="post-date">${new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                    <p class="post-preview">${escapeHtml(post.preview)}</p>
+                    <div class="post-tags">
+                        ${post.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
+                    </div>
+                </article>
+            `).join('');
+
+            // Attach click handlers to posts
+            container.querySelectorAll('.blog-post').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const filename = el.getAttribute('data-filename');
+                    showBlogPost(decodeURIComponent(filename));
+                });
+            });
+
+            // Update pagination
+            const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
+            renderPagination(totalPages);
+        }
+
+        function renderPagination(totalPages) {
+            const container = document.getElementById('pagination');
+            container.innerHTML = '';
+            
+            if (totalPages <= 1) return;
+
+            const maxVisible = 5;
+            const halfWindow = Math.floor(maxVisible / 2);
+            let startPage = Math.max(1, currentPage - halfWindow);
+            let endPage = Math.min(totalPages, startPage + maxVisible - 1);
+
+            if (endPage - startPage + 1 < maxVisible) {
+                startPage = Math.max(1, endPage - maxVisible + 1);
+            }
+
+            // First page
+            if (startPage > 1) {
+                const link = document.createElement('a');
+                link.href = '#';
+                link.className = 'page-link';
+                link.textContent = '<<';
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage = 1;
+                    displayPosts();
+                    window.scrollTo(0, 0);
+                });
+                container.appendChild(link);
+            }
+
+            // Previous
+            if (currentPage > 1) {
+                const link = document.createElement('a');
+                link.href = '#';
+                link.className = 'page-link';
+                link.textContent = '<';
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage--;
+                    displayPosts();
+                    window.scrollTo(0, 0);
+                });
+                container.appendChild(link);
+            }
+
+            // Ellipsis before
+            if (startPage > 1) {
+                const ellipsis = document.createElement('span');
+                ellipsis.className = 'page-ellipsis';
+                ellipsis.textContent = '...';
+                container.appendChild(ellipsis);
+            }
+
+            // Page numbers
+            for (let i = startPage; i <= endPage; i++) {
+                const link = document.createElement('a');
+                link.href = '#';
+                link.className = 'page-link' + (i === currentPage ? ' current' : '');
+                link.textContent = i;
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage = i;
+                    displayPosts();
+                    window.scrollTo(0, 0);
+                });
+                container.appendChild(link);
+            }
+
+            // Ellipsis after
+            if (endPage < totalPages) {
+                const ellipsis = document.createElement('span');
+                ellipsis.className = 'page-ellipsis';
+                ellipsis.textContent = '...';
+                container.appendChild(ellipsis);
+            }
+
+            // Next
+            if (currentPage < totalPages) {
+                const link = document.createElement('a');
+                link.href = '#';
+                link.className = 'page-link';
+                link.textContent = '>';
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage++;
+                    displayPosts();
+                    window.scrollTo(0, 0);
+                });
+                container.appendChild(link);
+            }
+
+            // Last page
+            if (endPage < totalPages) {
+                const link = document.createElement('a');
+                link.href = '#';
+                link.className = 'page-link';
+                link.textContent = '>>';
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage = totalPages;
+                    displayPosts();
+                    window.scrollTo(0, 0);
+                });
+                container.appendChild(link);
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        async function showBlogPost(filename) {
+            try {
+                const response = await fetch(`assets/markdown/blog/${filename}`);
+                if (!response.ok) {
+                    console.error('Failed to load blog post');
+                    return;
+                }
+                const content = await response.text();
+                const { html } = markdownToHtml(content);
+                
+                // Find post metadata
+                const post = allPosts.find(p => p.filename === filename);
+                
+                // Populate post header
+                if (post) {
+                    document.getElementById('post-title').textContent = post.title;
+                    document.getElementById('post-date').textContent = post.date;
+                    
+                    // Populate tags
+                    const tagsContainer = document.getElementById('post-tags');
+                    tagsContainer.innerHTML = '';
+                    if (post.tags && post.tags.length > 0) {
+                        post.tags.forEach(tag => {
+                            const tagEl = document.createElement('span');
+                            tagEl.className = 'tag';
+                            tagEl.textContent = tag;
+                            tagsContainer.appendChild(tagEl);
+                        });
+                    }
+                }
+                
+                document.getElementById('post-content').innerHTML = html;
+                document.getElementById('view-list').style.display = 'none';
+                document.getElementById('view-post').style.display = 'block';
+                
+                window.history.pushState(null, '', `?post=${encodeURIComponent(filename)}`);
+                window.scrollTo(0, 0);
+            } catch (e) {
+                console.error('Error loading blog post:', e);
+            }
+        }
+
+        function showBlogList() {
+            document.getElementById('view-list').style.display = '';
+            document.getElementById('view-post').style.display = 'none';
+            window.history.pushState(null, '', window.location.pathname);
+            window.scrollTo(0, 0);
+        }
+
+        function getPostFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('post');
+        }
+
+        async function init() {
+            allPosts = await loadBlogMetadata();
+            if (!allPosts || allPosts.length === 0) {
+                document.getElementById('posts-list').innerHTML = '<p>No blog posts yet.</p>';
+                return;
+            }
+
+            // Check if URL has a post parameter
+            const postFromUrl = getPostFromUrl();
+            
+            filteredPosts = allPosts;
+            buildTagsFilter();
+            buildDateFilter();
+            displayPosts();
+
+            if (postFromUrl) {
+                await showBlogPost(postFromUrl);
+            }
+
+            // Search
+            document.getElementById('search').addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                currentPage = 1;
+                applyFilters();
+            });
+
+            // Back link
+            document.getElementById('back-link').addEventListener('click', (e) => {
+                e.preventDefault();
+                showBlogList();
+            });
+
+            // Handle browser back button
+            window.addEventListener('popstate', () => {
+                const post = getPostFromUrl();
+                if (post) {
+                    showBlogPost(post);
+                } else {
+                    showBlogList();
+                }
+            });
+        }
+
+        document.getElementById('navbar').innerHTML = createNavbar('Blog');
+        init();
+    </script>
+</body>
+</html>
