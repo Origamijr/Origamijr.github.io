@@ -4,12 +4,6 @@ date: 2026-04-21
 tags: [AI, Living Document]
 ---
 
-# Table of contents
-1. [Background](#background)
-2. [Landscape](#landscape)
-3. [Art](#art)
-4. [Coding](#coding)
-
 ## Personal Background<a name="background"></a>
 
 This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. 

@@ -2,14 +2,14 @@
   "posts": [
     {
       "filename": "LD_ai.md",
-      "title": "\"[LD] Opinions on AI\"",
+      "title": "[LD] Opinions on AI",
       "date": "2026-04-21",
       "year_month": "2026-04",
       "tags": [
-        "[AI",
-        "Living Document]"
+        "AI",
+        "Living Document"
       ],
-      "preview": "1. [Background](#background) 2. [Landscape](#landscape) 3. [Art](#art) 4. [Coding](#coding) This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. I have a decently strong background in the math and engineering of modern AI, probably somewhere between an undergrad..."
+      "preview": "This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. I have a decently strong background in the math and engineering of modern AI, probably somewhere between an undergrad level and an actual ML engineer (well below..."
     },
     {
       "filename": "20260416_test.md",
@@ -42,5 +42,5 @@
       "preview": "Testing"
     }
   ],
-  "generated": "2026-04-21T10:15:31.126564"
+  "generated": "2026-04-21T03:25:49.621426"
 }

@@ -23,8 +23,17 @@ def parse_frontmatter(content):
             key, value = line.split(':', 1)
             key = key.strip()
             value = value.strip()
-            # Handle comma-separated values
-            if ',' in value:
+            
+            # Handle quoted strings - remove outer quotes
+            if (value.startswith('"') and value.endswith('"')) or (value.startswith("'") and value.endswith("'")):
+                frontmatter[key] = value[1:-1]
+            # Handle YAML array syntax [item1, item2]
+            elif value.startswith('[') and value.endswith(']'):
+                # Remove brackets and split by comma
+                array_content = value[1:-1]
+                frontmatter[key] = [v.strip() for v in array_content.split(',') if v.strip()]
+            # Handle comma-separated values (fallback for non-bracketed lists)
+            elif ',' in value:
                 frontmatter[key] = [v.strip() for v in value.split(',')]
             else:
                 frontmatter[key] = value
