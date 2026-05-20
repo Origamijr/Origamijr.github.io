@@ -373,6 +373,9 @@
                     document.getElementById('post-title').textContent = post.title;
                     document.getElementById('post-date').textContent = post.date;
                     
+                    // Update page title
+                    document.title = post.title + " - Kevin's Website";
+                    
                     // Populate tags
                     const tagsContainer = document.getElementById('post-tags');
                     tagsContainer.innerHTML = '';
@@ -400,6 +403,7 @@
         function showBlogList() {
             document.getElementById('view-list').style.display = '';
             document.getElementById('view-post').style.display = 'none';
+            document.title = "Kevin's Website";
             window.history.pushState(null, '', window.location.pathname);
             window.scrollTo(0, 0);
         }
