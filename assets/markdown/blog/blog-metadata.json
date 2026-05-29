@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "filename": "20260528_peda.md",
+      "title": "My Naive Pedagogy",
+      "date": "2026-05-28",
+      "year_month": "2026-05",
+      "tags": [
+        "philosophy"
+      ],
+      "preview": "A Canadian survey of children in developing countries found that when asked what they would do if they were the president of their country, most children chose to say they would improve education. Living in the United States, education is something I think many of us take for granted. Prior..."
+    },
+    {
       "filename": "20260519_tcgren.md",
       "title": "TCG Renaissance?",
       "date": "2026-05-19",
@@ -52,5 +62,5 @@
       "preview": "Testing"
     }
   ],
-  "generated": "2026-05-20T07:31:06.505332"
+  "generated": "2026-05-29T00:15:44.688640"
 }
