@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "filename": "20260519_tcgren.md",
+      "title": "TCG Renaissance?",
+      "date": "2026-05-19",
+      "year_month": "2026-05",
+      "tags": [
+        "games"
+      ],
+      "preview": "> \"I am convinced, the way one plays chess always reflects the player's personality. If something defines his character, then it will also define his way of playing.\" -Vladmir Kramnik Games can be said to provide a window into the mind of the player. There have been many TV shows..."
+    },
+    {
       "filename": "LD_ai.md",
       "title": "[LD] Opinions on AI",
       "date": "2026-04-21",
@@ -42,5 +52,5 @@
       "preview": "Testing"
     }
   ],
-  "generated": "2026-04-21T10:27:36.938517"
+  "generated": "2026-05-20T07:31:06.505332"
 }
