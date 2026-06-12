@@ -1,10 +1,23 @@
 {
   "posts": [
     {
+      "filename": "LD_ai.md",
+      "title": "[LD] Opinions on AI",
+      "date": "2026-04-21",
+      "year_month": "2026-04",
+      "update": "2026-06-11",
+      "tags": [
+        "AI",
+        "Living Document"
+      ],
+      "preview": "This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. I have a decently strong background in the math and engineering of modern AI, probably somewhere between an undergrad level and an actual ML engineer (well below..."
+    },
+    {
       "filename": "20260528_peda.md",
       "title": "My Naive Pedagogy",
       "date": "2026-05-28",
       "year_month": "2026-05",
+      "update": "",
       "tags": [
         "philosophy"
       ],
@@ -55,5 +68,5 @@
       "preview": "Testing"
     }
   ],
-  "generated": "2026-05-29T00:15:44.688640"
+  "generated": "2026-06-12T07:34:06.730854"
 }
