@@ -210,7 +210,7 @@
             container.innerHTML = pagePosts.map(post => `
                 <article class="blog-post" data-filename="${encodeURIComponent(post.filename)}">
                     <h2><a href="#">${escapeHtml(post.title)}</a></h2>
-                    <time class="post-date">${new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                    <time class="post-date">${post.update ? `Updated ${new Date(post.update).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}` : new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
                     <p class="post-preview">${escapeHtml(post.preview)}</p>
                     <div class="post-tags">
                         ${post.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
@@ -371,7 +371,13 @@
                 // Populate post header
                 if (post) {
                     document.getElementById('post-title').textContent = post.title;
-                    document.getElementById('post-date').textContent = post.date;
+                    
+                    // Show both creation and update dates
+                    let dateText = post.date;
+                    if (post.update) {
+                        dateText = `${post.date} (updated ${post.update})`;
+                    }
+                    document.getElementById('post-date').textContent = dateText;
                     
                     // Update page title
                     document.title = post.title + " - Kevin's Website";

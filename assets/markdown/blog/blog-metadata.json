@@ -1,20 +1,11 @@
 {
   "posts": [
     {
-      "filename": "20260519_tcgren.md",
-      "title": "TCG Renaissance?",
-      "date": "2026-05-19",
-      "year_month": "2026-05",
-      "tags": [
-        "games"
-      ],
-      "preview": "> \"I am convinced, the way one plays chess always reflects the player's personality. If something defines his character, then it will also define his way of playing.\" -Vladmir Kramnik Games can be said to provide a window into the mind of the player. There have been many TV shows..."
-    },
-    {
       "filename": "LD_ai.md",
       "title": "[LD] Opinions on AI",
       "date": "2026-04-21",
       "year_month": "2026-04",
+      "update": "2026-06-11",
       "tags": [
         "AI",
         "Living Document"
@@ -22,10 +13,57 @@
       "preview": "This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. I have a decently strong background in the math and engineering of modern AI, probably somewhere between an undergrad level and an actual ML engineer (well below..."
     },
     {
+      "filename": "draft_haunt_pzom.md",
+      "title": "Horrors of AI: Hauntology and P-Zombies",
+      "date": "2026-05-31",
+      "year_month": "2026-05",
+      "update": "",
+      "tags": [
+        "philosophy",
+        "AI"
+      ],
+      "preview": ""
+    },
+    {
+      "filename": "20260528_peda.md",
+      "title": "My Naive Pedagogy",
+      "date": "2026-05-28",
+      "year_month": "2026-05",
+      "update": "",
+      "tags": [
+        "philosophy"
+      ],
+      "preview": "A Canadian survey of children in developing countries found that when asked what they would do if they were the president of their country, most children chose to say they would improve education. Living in the United States, education is something I think many of us take for granted. Prior..."
+    },
+    {
+      "filename": "20260519_tcgren.md",
+      "title": "TCG Renaissance?",
+      "date": "2026-05-19",
+      "year_month": "2026-05",
+      "update": "",
+      "tags": [
+        "games"
+      ],
+      "preview": "> \"I am convinced, the way one plays chess always reflects the player's personality. If something defines his character, then it will also define his way of playing.\" -Vladmir Kramnik Games can be said to provide a window into the mind of the player. There have been many TV shows..."
+    },
+    {
+      "filename": "LD_ideas.md",
+      "title": "[LD] Project Ideas",
+      "date": "2026-05-05",
+      "year_month": "2026-05",
+      "update": "",
+      "tags": [
+        "Living Document",
+        "Project"
+      ],
+      "preview": "Control a party of N adventures of various classes. Play minesweeper by directing adventurer to a square. Adventurers can only traverse cleared squares. - vanguard - default: high health pool and hp regen - taunt: draw all enemies into current square - scout - default: high movement speed and chord..."
+    },
+    {
       "filename": "20260416_test.md",
       "title": "Test Post",
       "date": "2026-04-16",
       "year_month": "2026-04",
+      "update": "",
       "tags": [
         "website"
       ],
@@ -36,6 +74,7 @@
       "title": "Site Reconstruction",
       "date": "2026-04-15",
       "year_month": "2026-04",
+      "update": "",
       "tags": [
         "website"
       ],
@@ -46,11 +85,12 @@
       "title": "First Post",
       "date": "2026-04-14",
       "year_month": "2026-04",
+      "update": "",
       "tags": [
         "website"
       ],
       "preview": "Testing"
     }
   ],
-  "generated": "2026-05-20T07:31:06.505332"
+  "generated": "2026-06-12T00:29:54.996978"
 }

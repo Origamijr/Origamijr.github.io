@@ -80,13 +80,14 @@ def generate_blog_metadata():
             'title': frontmatter.get('title', 'Untitled'),
             'date': date_str,
             'year_month': year_month,
+            'update': frontmatter.get('update', ''),
             'tags': frontmatter.get('tags', []) if isinstance(frontmatter.get('tags'), list) else [frontmatter.get('tags', '')],
             'preview': get_preview(content)
         }
         posts.append(post_meta)
     
-    # Sort by date, newest first
-    posts.sort(key=lambda x: x['date'], reverse=True)
+    # Sort by date, newest first (prioritize update date over creation date)
+    posts.sort(key=lambda x: x['update'] if x['update'] else x['date'], reverse=True)
     
     # Write metadata
     metadata = {
