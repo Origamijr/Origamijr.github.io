@@ -1,10 +1,45 @@
 {
   "posts": [
     {
+      "filename": "20260907_design_update.md",
+      "title": "Design is my passion",
+      "date": "2026-09-08",
+      "year_month": "2026-09",
+      "update": "",
+      "tags": [
+        "website"
+      ],
+      "preview": "I decided to do a minor rehaul of this website to give it a little bit more personality. This post is just a quick rundown of the key changes and the thoughts behind them. This rehaul targets the question of what I want the overall design philosophy of this website..."
+    },
+    {
+      "filename": "20260908_big_four.md",
+      "title": "The Big Four",
+      "date": "2026-09-07",
+      "year_month": "2026-09",
+      "update": "",
+      "tags": [
+        "projects"
+      ],
+      "preview": "Like many other people (programmers in particular) my life is a constant cycle of getting ideas for side projects, getting close to or even completing a minimum viable product, and then putting that project on \"indefinite hiatus\". In a way AI has made it easier to cycle through these \"side..."
+    },
+    {
+      "filename": "LD_ai.md",
+      "title": "[LD] Opinions on AI",
+      "date": "2026-04-21",
+      "year_month": "2026-04",
+      "update": "2026-06-11",
+      "tags": [
+        "AI",
+        "Living Document"
+      ],
+      "preview": "This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. I have a decently strong background in the math and engineering of modern AI, probably somewhere between an undergrad level and an actual ML engineer (well below..."
+    },
+    {
       "filename": "20260528_peda.md",
       "title": "My Naive Pedagogy",
       "date": "2026-05-28",
       "year_month": "2026-05",
+      "update": "",
       "tags": [
         "philosophy"
       ],
@@ -55,5 +90,5 @@
       "preview": "Testing"
     }
   ],
-  "generated": "2026-05-29T00:15:44.688640"
+  "generated": "2026-09-08T00:30:25.903541"
 }

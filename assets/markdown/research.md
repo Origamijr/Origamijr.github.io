@@ -1,6 +1,8 @@
 ## Publications
 
-Will post links soon*
+A bit out of date. Needs to be updated and reformatted.
+
+Refer to [My Google Scholar](https://scholar.google.com/citations?user=Jcacf-kAAAAJ) for now.
 
 ### Accepted
 

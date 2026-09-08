@@ -1,3 +1,7 @@
+body .container {
+    background: var(--color-container-solid);
+}
+
 .blog-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -15,7 +19,7 @@
 }
 
 .blog-sidebar {
-    background: #dbdbdb;
+    background: #ededed;
     padding: 1.4rem;
     height: fit-content;
     position: sticky;
@@ -180,7 +184,7 @@
 
 .tag {
     display: inline-block;
-    background: #e0e0e0;
+    background: #c0c0c0;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.85rem;
