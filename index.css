@@ -242,9 +242,10 @@ header h1 {
 }
 
 .navbar {
+    max-width: 800px;
+    margin: var(--spacing-md) auto;
     background: var(--color-container);
     border: var(--border-width) solid var(--color-border);
-    margin: var(--spacing-md);
 }
 
 .nav-container {
