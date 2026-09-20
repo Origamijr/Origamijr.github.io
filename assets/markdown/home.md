@@ -16,6 +16,6 @@ You can find my <a href="assets/files/Resume.pdf" download>resume here</a> and m
 
 <img src="assets/images/portrait.png" alt="me" width="30%" height="YYY" class="center"/>
 
-Credit to [Xuan](https://www.instagram.com/hua.xuann/?hl=en) for my beautiful website favicon.
+Credit to [Xuan](https://www.huaxuann.com/) for my beautiful website favicon.
 
 *Last Updated 9/07/2026*

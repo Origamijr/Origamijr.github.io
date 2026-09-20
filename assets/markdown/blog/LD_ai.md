@@ -19,9 +19,9 @@ I am also critically online, with much of my media consumption being a combinati
 
 From my perspective, this is an extremely cold take. Unfortunately, AI has found itself directly entwined with capitalism, which could be said to be the source of many of my gripes. We should not, however, dismiss this as a simple issue of capitalism and try to engage in the direct perceptions and impacts of AI.
 
-As is with most technologies, the sellers of AI profit when there are clear perceived benefits of AI, so it is in their best interest to oversell the capabilities of the technology. AI in itself is a very difficult topic for most people to understand. In a way, we are in a "market for lemons", where there is a severe information asymmetry between the AI providers and the AI consumers. The unique inpenatrability of AI creates an asymmetry that further enables the overselling of the capabilities and upward trajectory of AI.
+As is with most technologies, the sellers of AI profit when there are clear perceived benefits of AI, so it is in their best interest to oversell the capabilities of the technology. AI in itself is a very difficult topic for most people to understand. In a way, we are in a "market for lemons", where there is a severe information asymmetry between the AI providers and the AI consumers. The unique impenetrability of AI creates an asymmetry that further enables the overselling of the capabilities and upward trajectory of AI.
 
-The ideal remedy would be a general increase in "AI literacy". At least in the online sphere I reside, the trend towards AI literacy seems positive, but I'm not sure how well this reflects in the general public, and perhaps more importantly, investors and policy makes.
+The ideal remedy would be a general increase in "AI literacy". At least in the online sphere I reside, the trend towards AI literacy seems positive, but I'm not sure how well this reflects in the general public, and perhaps more importantly, investors and policy makers.
 
 ### The Singularity is not coming (in this AI boom)
 
@@ -29,13 +29,13 @@ Technologically, the biggest kickstarter to the current AI boom is twofold: impr
 
 From what I've seen though, It would seem that the ocean of "quality data" has probably already been tapped, and with our current hardware capabilities, we might be approaching a limit in reasonable feasibility. Promises for "stronger models" at the highest end probably aren't coming from any changes in fundamentals, but moreso in the engineering wrapping the models.
 
-If I were to point to the clearest issue in the current LLM paradigm is the disconnect between virtual data current models use and the ways things work in the real world. The sentiment of this disconnect seems to be held within the research community, with the shift to thinking about "world models" and reinforcement learning. Mayhap the capital generated from the current AI boom may incur a sort of research inertia towards another breakthrough, but if anything, history has shown that this type of paradigm shifting AI development occurs over a much longer time period, timed perhaps after another AI winter.
+If I were to point to the clearest issue in the current LLM paradigm is the disconnect between virtual data current models use and the ways things work in the real world. The sentiment of this disconnect seems to be held within the research community, with the shift to thinking about "world models", reinforcement learning, and robotics. Mayhap the capital generated from the current AI boom may incur a sort of research inertia towards another breakthrough, but if anything, history has shown that this type of paradigm shifting AI development occurs over a much longer time period, timed perhaps after another AI winter.
 
 ### What we have might effectively be close enough to AGI
 
 While we might be in a plateau in terms of core technology, I think we still haven't harnessed all the capabilities of the current models. As is, these models are extremely potent. The AGI label seems to be a constant moving target, varying from person to person. The problem seems to be that it is tied to the entire range of human capabilities, which is very difficult to measure in practice. 
 
-Practically though, I think AI can *(with the right wrapper)* perform mostly any complex reasoning tasks to a generally productive level. I see the two key paradigms extending LLMs towards this aim are multimodality (vision and audio) and tool calling. In this sense, ignoring compute costs, AI seems plenty capable for most tasks, which is probably "close enough" for the social paradigm we expected AGI to bring.
+Practically though, I think AI can (with the right wrapper) perform mostly any complex reasoning tasks to a generally productive level. I see the two key paradigms extending LLMs towards this aim are multimodality (vision and audio) and tool calling. In this sense, ignoring compute costs, AI seems plenty capable for most tasks, which is probably "close enough" for the social paradigm we expected AGI to bring.
 
 ## AI Coding<a name="coding"></a>
 
@@ -43,7 +43,7 @@ Coding has become a task LLMs have become particularly adept at for a variety of
 
 ### AI is democratizing coding
 
-I really hate the term "democratizing", as it is mostly coopted by entrepreneurs trying to sell a product. But in the case of coding, I really think the unreasonable effectiveness of AI is showing through. Non-coders who are even slightly technically literate are evidently able to use AI to create websites and small applets without even touching a line of code. Personally, I have been able to completely vibe code webpages with only a week's worth of free claude prompts. For even more capable coders working in tandem with AI, the production speed of applications is accelerating at an unbelievable pace. We can't really deny that a much broader populace without coding training are now able create their own little applications using only natural language prompts.
+I dislike the term "democratizing", as it is mostly coopted by entrepreneurs trying to sell a product. But in the case of coding, I really think the unreasonable effectiveness of AI is showing through. Non-coders who are even slightly technically literate are evidently able to use AI to create websites and small applets without even touching a line of code. Personally, I have been able to completely vibe code webpages with only a week's worth of free claude prompts. For even more capable coders working in tandem with AI, the production speed of applications is accelerating at an unbelievable pace. We can't really deny that a much broader populace without coding training are now able create their own little applications using only natural language prompts.
 
 At the moment, I don't think we've seen the effect of this to the fullest extent. In the hands of an increasingly technically literate populace, perhaps the need for trained coders will decrease for the development of simple applications, like personal websites and todo-list type apps. 
 
@@ -73,7 +73,7 @@ More importantly, and also a bit more esoterically, the artist is the the embodi
 
 Insofar as the utility of the "artist" label is just the ability to produce artwork, any person capable of providing artwork is an artist. However, culturally my perception is that even subconsciously, we treat artist as the art. The haphazardous production of art divorced from artist's artistic experience hence cannot be emboddied within the artist. Any treatment of such person as an artist would then be deception.
 
-### AI is an enabler for art theft
+### AI art is ethically troubling
 
 It's not accurate to say that AI is creating carbon copies or even collages of existing artworks. The moral delimma regarding the treatment of nonconsensual use of artwork in model training, and of theft in general, is a matter of intellectual property.
 

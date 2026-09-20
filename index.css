@@ -41,6 +41,11 @@
     --border-width-thin: 1px;
 }
 
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("assets/fonts/Comic\ Sans\ MS.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -263,6 +268,7 @@ header h1 {
 }
 
 .nav-menu {
+    margin: 0;
     padding-top: 8px;
     display: flex;
     list-style: none;

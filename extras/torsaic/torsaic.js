@@ -45,9 +45,9 @@ function decodeBoard(b64, rows, cols) {
 
 const LEVELS = [
   { file: '/extras/torsaic/torsaic_5x5_2.json',  shuffled: false, vx: -1, vy: -1 },
-  { file: '/extras/torsaic/torsaic_7x7_3.json',  shuffled: false, vx:  1, vy:  1 },
+  { file: '/extras/torsaic/torsaic_7x7_3.json',  shuffled: false, vx:  1, vy: -1 },
   { file: '/extras/torsaic/torsaic_9x9_5.json',  shuffled: false, vx:  1, vy:  1 },
-  { file: '/extras/torsaic/torsaic_11x11_5.json', shuffled: true, vx:  1, vy:  1 },
+  { file: '/extras/torsaic/torsaic_11x11_5.json', shuffled: true, vx: -1, vy:  1 },
 ];
 const SPEED = 16;
 
