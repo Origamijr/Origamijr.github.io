@@ -1,6 +1,17 @@
 {
   "posts": [
     {
+      "filename": "20261103_electoralism.md",
+      "title": "The Chasm of Democracy",
+      "date": "2026-11-03",
+      "year_month": "2026-11",
+      "update": "",
+      "tags": [
+        "philosophy"
+      ],
+      "preview": "As I type this at 1 a.m. in the morning, I am simultaneously excited and terrified to know the results of the midterm elections."
+    },
+    {
       "filename": "20260907_design_update.md",
       "title": "Design is my passion",
       "date": "2026-09-08",
@@ -9,7 +20,7 @@
       "tags": [
         "website"
       ],
-      "preview": "I decided to do a minor rehaul of this website to give it a little bit more personality. This post is just a quick rundown of the key changes and the thoughts behind them. This rehaul targets the question of what I want the overall design philosophy of this website..."
+      "preview": "I decided to do a minor rehaul of this website to give it a little bit more personality. This post is just a quick rundown of the key changes and..."
     },
     {
       "filename": "20260908_big_four.md",
@@ -20,7 +31,7 @@
       "tags": [
         "projects"
       ],
-      "preview": "Like many other people (programmers in particular) my life is a constant cycle of getting ideas for side projects, getting close to or even completing a minimum viable product, and then putting that project on \"indefinite hiatus\". In a way AI has made it easier to cycle through these \"side..."
+      "preview": "Like many other people (programmers in particular) my life is a constant cycle of getting ideas for side projects, getting close to or even completing a minimum viable product, and..."
     },
     {
       "filename": "LD_ai.md",
@@ -32,7 +43,7 @@
         "AI",
         "Living Document"
       ],
-      "preview": "This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. I have a decently strong background in the math and engineering of modern AI, probably somewhere between an undergrad level and an actual ML engineer (well below..."
+      "preview": "This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. I have a decently strong background in..."
     },
     {
       "filename": "20260528_peda.md",
@@ -43,7 +54,7 @@
       "tags": [
         "philosophy"
       ],
-      "preview": "A Canadian survey of children in developing countries found that when asked what they would do if they were the president of their country, most children chose to say they would improve education. Living in the United States, education is something I think many of us take for granted. Prior..."
+      "preview": "A Canadian survey of children in developing countries found that when asked what they would do if they were the president of their country, most children chose to say they..."
     },
     {
       "filename": "20260519_tcgren.md",
@@ -54,7 +65,7 @@
       "tags": [
         "games"
       ],
-      "preview": "> \"I am convinced, the way one plays chess always reflects the player's personality. If something defines his character, then it will also define his way of playing.\" -Vladmir Kramnik Games can be said to provide a window into the mind of the player. There have been many TV shows..."
+      "preview": "> \"I am convinced, the way one plays chess always reflects the player's personality. If something defines his character, then it will also define his way of playing.\" -Vladmir Kramnik..."
     },
     {
       "filename": "20260416_test.md",
@@ -76,7 +87,7 @@
       "tags": [
         "website"
       ],
-      "preview": "After about 2 years of site inactivity, Finally got around to redoing the site. For a while I've wanted to abandon my [old site](https://github.com/Origamijr/CapitalistManifestoDesu), which was built using the Angular framework. That was mostly because it was built during an internship where I was using Angular. Over time, I've grown..."
+      "preview": "After about 2 years of site inactivity, Finally got around to redoing the site. For a while I've wanted to abandon my [old site](https://github.com/Origamijr/CapitalistManifestoDesu), which was built using the Angular..."
     },
     {
       "filename": "20260415_first.md",
@@ -90,5 +101,5 @@
       "preview": "Testing"
     }
   ],
-  "generated": "2026-09-08T07:32:11.553154"
+  "generated": "2026-11-03T01:30:12.494721"
 }

@@ -150,7 +150,7 @@ function neighborSum(r, c) {
 function checkVictory() {
   for (const [key, value] of clueMap) {
     const [r, c] = key.split(',').map(Number);
-    if (neighborSum(r, c) !== value) return false;
+    if (neighborSum(r, c) !== value) return false; // TODO fix ambiguity, should also check 9-value
   }
   return true;
 }

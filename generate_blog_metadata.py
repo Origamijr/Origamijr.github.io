@@ -39,7 +39,7 @@ def parse_frontmatter(content):
                 frontmatter[key] = value
     return frontmatter
 
-def get_preview(content, max_words=50):
+def get_preview(content, max_words=30):
     """Extract first few lines for preview."""
     # Remove frontmatter
     content = re.sub(r'^---\n[\s\S]*?\n---\n', '', content)

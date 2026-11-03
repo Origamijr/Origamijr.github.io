@@ -35,6 +35,12 @@
                 </div>
             </main>
             
+            <div class="sidebar-column">
+            <nav id="post-toc" class="post-toc" style="display: none;">
+                <h3>Contents</h3>
+                <ul id="toc-list"></ul>
+            </nav>
+
             <aside class="blog-sidebar">
                 <div class="search-box">
                     <input type="text" id="search" placeholder="Search posts...">
@@ -50,6 +56,7 @@
                     <div id="date-filter"></div>
                 </div>
             </aside>
+            </div>
         </div>
     </div>
         </div>
@@ -132,7 +139,7 @@
                 const monthsDiv = document.createElement('div');
                 monthsDiv.className = 'date-months collapsed';
                 
-                const yearToggle = document.createElement('button');
+                const yearToggle = document.createElement('div');
                 yearToggle.className = 'date-toggle';
                 yearToggle.textContent = '▶ ' + year;
                 yearToggle.addEventListener('click', () => {
@@ -345,7 +352,53 @@
             return div.innerHTML;
         }
 
-        async function showBlogPost(filename) {
+        // Table of contents: [{ link, target }] for the current post
+        let tocEntries = [];
+
+        function buildToc(headers) {
+            const list = document.getElementById('toc-list');
+            list.innerHTML = '';
+            tocEntries = headers.map(({ level, text, slug }) => {
+                const li = document.createElement('li');
+                li.className = `toc-h${level}`;
+                const link = document.createElement('a');
+                link.href = `#${slug}`;
+                link.textContent = text;
+                const target = document.getElementById(slug);
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    target.scrollIntoView();
+                    window.history.replaceState(null, '', `#${slug}`);
+                });
+                li.appendChild(link);
+                list.appendChild(li);
+                return { link, target };
+            });
+            document.getElementById('post-toc').style.display = headers.length ? '' : 'none';
+            updateActiveToc();
+        }
+
+        // Highlight the last section whose heading has scrolled past the top of the viewport
+        function updateActiveToc() {
+            let active = null;
+            tocEntries.forEach(entry => {
+                if (entry.target.getBoundingClientRect().top <= 10) active = entry;
+            });
+            tocEntries.forEach(entry => entry.link.classList.toggle('active', entry === active));
+        }
+
+        // On mobile, the TOC sits between the post header and content instead of the sidebar
+        const mobileQuery = window.matchMedia('(max-width: 768px)');
+        function placeToc() {
+            const toc = document.getElementById('post-toc');
+            if (mobileQuery.matches) {
+                document.getElementById('post-content').before(toc);
+            } else {
+                document.querySelector('.sidebar-column').prepend(toc);
+            }
+        }
+
+        async function showBlogPost(filename, hash = '') {
             try {
                 let content;
                 let response = await fetch(`assets/markdown/blog/${filename}`);
@@ -363,7 +416,7 @@
                     content = await response.text();
                 }
                 
-                const { html } = markdownToHtml(content);
+                const { html, headers } = markdownToHtml(content);
                 
                 // Find post metadata
                 const post = allPosts.find(p => p.filename === filename);
@@ -396,11 +449,17 @@
                 }
                 
                 document.getElementById('post-content').innerHTML = html;
+                buildToc(headers);
                 document.getElementById('view-list').style.display = 'none';
                 document.getElementById('view-post').style.display = 'block';
-                
-                window.history.pushState(null, '', `?post=${encodeURIComponent(filename)}`);
-                window.scrollTo(0, 0);
+
+                window.history.pushState(null, '', `?post=${encodeURIComponent(filename)}${hash}`);
+                const section = hash && document.getElementById(decodeURIComponent(hash.slice(1)));
+                if (section) {
+                    section.scrollIntoView();
+                } else {
+                    window.scrollTo(0, 0);
+                }
             } catch (e) {
                 console.error('Error loading blog post:', e);
             }
@@ -409,6 +468,8 @@
         function showBlogList() {
             document.getElementById('view-list').style.display = '';
             document.getElementById('view-post').style.display = 'none';
+            document.getElementById('post-toc').style.display = 'none';
+            tocEntries = [];
             document.title = "Kevin's Website";
             window.history.pushState(null, '', window.location.pathname);
             window.scrollTo(0, 0);
@@ -434,8 +495,12 @@
             buildDateFilter();
             displayPosts();
 
+            placeToc();
+            mobileQuery.addEventListener('change', placeToc);
+            window.addEventListener('scroll', updateActiveToc, { passive: true });
+
             if (postFromUrl) {
-                await showBlogPost(postFromUrl);
+                await showBlogPost(postFromUrl, window.location.hash);
             }
 
             // Search
@@ -455,7 +520,7 @@
             window.addEventListener('popstate', () => {
                 const post = getPostFromUrl();
                 if (post) {
-                    showBlogPost(post);
+                    showBlogPost(post, window.location.hash);
                 } else {
                     showBlogList();
                 }

@@ -51,8 +51,8 @@ function parseFrontmatter(src) {
  * Supports: headings, bold, italic, links, images, inline code,
  *           fenced code blocks, indented code blocks, blockquotes,
  *           ordered/unordered lists, paragraphs, raw HTML.
- * Also parses and returns frontmatter metadata.
- * Returns { html: string, frontmatter: object }
+ * Also parses and returns frontmatter metadata, and collects h2/h3 headings.
+ * Returns { html: string, frontmatter: object, headers: [{ level, text, slug }] }
  */
 function markdownToHtml(src) {
     const { frontmatter, content } = parseFrontmatter(src);
@@ -78,7 +78,28 @@ function markdownToHtml(src) {
             .replace(/_([^_]+)_/g, '<em>$1</em>');
     }
 
+    // Reverse escape() to recover plain text
+    function unescapeHtml(t) {
+        return t
+            .replace(/&quot;/g, '"')
+            .replace(/&gt;/g, '>')
+            .replace(/&lt;/g, '<')
+            .replace(/&amp;/g, '&');
+    }
+
+    // Convert heading text to a URL-safe slug, de-duplicating repeats with -1, -2, ...
+    const slugCounts = {};
+    function uniqueSlug(text) {
+        const base = text.toLowerCase().trim()
+            .replace(/[^\p{L}\p{N}\s-]/gu, '')
+            .replace(/\s+/g, '-') || 'section';
+        const n = slugCounts[base] || 0;
+        slugCounts[base] = n + 1;
+        return n ? `${base}-${n}` : base;
+    }
+
     let h = '';
+    const headers = [];
 
     // Pre-process: extract fenced code blocks and raw HTML tags
     // Replace them with placeholders to protect their contents
@@ -142,11 +163,18 @@ function markdownToHtml(src) {
                 return;
             }
 
-            // Headings
+            // Headings (h2/h3 get slug ids and are collected for a table of contents)
             if (f === '#') {
                 const level = b.match(/^#+/)[0].length;
-                const text = b.slice(level).trim();
-                h += `<h${level}>${inlineEscape(text)}</h${level}>`;
+                const inner = inlineEscape(b.slice(level).trim());
+                if (level === 2 || level === 3) {
+                    const text = unescapeHtml(inner.replace(/<[^>]+>/g, ''));
+                    const slug = uniqueSlug(text);
+                    headers.push({ level, text, slug });
+                    h += `<h${level} id="${slug}">${inner}</h${level}>`;
+                } else {
+                    h += `<h${level}>${inner}</h${level}>`;
+                }
                 return;
             }
 
@@ -167,7 +195,7 @@ function markdownToHtml(src) {
     // Final restoration of any remaining HTML placeholders
     h = h.replace(/\x00HTML(\d+)\x00/g, (_, i) => htmlBlocks[parseInt(i, 10)]);
 
-    return { html: h, frontmatter };
+    return { html: h, frontmatter, headers };
 }
 
 /**
