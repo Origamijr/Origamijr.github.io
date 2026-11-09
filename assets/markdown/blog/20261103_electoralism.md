@@ -1,7 +1,7 @@
 ---
 title: The Chasm of Democracy
 date: 2026-11-03
-tags: philosophy
+tags: [philosophy, opinion]
 ---
 
 As I type this at 2 a.m. in the morning, I am simultaneously excited and terrified to know the results of the midterm elections today/tomorrow. While most coverage seems to indicate a degree of political blowback, signaling a future where Trump can actually be put in check, it also spotlighted several faults in the electoral system.

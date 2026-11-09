@@ -75,10 +75,17 @@
                     const entry = document.createElement('div');
                     entry.className = 'music-entry';
 
-                    const video = document.createElement('iframe');
-                    video.src = `https://www.youtube.com/embed/${id}`;
-                    video.allowFullscreen = true;
-                    video.loading = 'lazy';
+                    const video = document.createElement('div');
+                    video.className = 'music-video';
+                    video.style.backgroundImage = `url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)`;
+                    video.innerHTML = '<span class="play-btn">▶</span>';
+                    video.addEventListener('click', () => {
+                        const iframe = document.createElement('iframe');
+                        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+                        iframe.allow = 'autoplay; fullscreen';
+                        iframe.allowFullscreen = true;
+                        video.replaceWith(iframe);
+                    }, { once: true });
 
                     const text = document.createElement('div');
                     text.className = 'music-text';
