@@ -2,7 +2,7 @@
 title: "[LD] Opinions on AI"
 date: 2026-04-21
 update: 2026-06-11
-tags: [AI, Living Document]
+tags: [tech, opinion]
 ---
 
 ## Personal Background<a name="background"></a>

@@ -18,4 +18,4 @@ You can find my <a href="assets/files/Resume.pdf" download>resume here</a> and m
 
 Credit to [Xuan](https://www.huaxuann.com/) for my beautiful website favicon.
 
-*Last Updated 9/07/2026*
+*Last Updated 11/09/2026*

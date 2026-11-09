@@ -16,7 +16,11 @@
     <div class="container">
         <div id="home-content" class="markdown-content"></div>
         
-        <h1>contact</h1>
+        <h2>What I'm listening to</h2>
+        <em>(at time of last update)</em>
+        <div id="music-content"></div>
+
+        <h2>contact</h1>
 
         <div id="contact-content" class="markdown-content"></div>
     </div>
@@ -25,6 +29,79 @@
         document.getElementById('navbar').innerHTML = createNavbar('Home');
         window.addEventListener('load', loadMarkdown('assets/markdown/home.md', 'home-content'));
         window.addEventListener('load', loadMarkdown('assets/markdown/contact.md', 'contact-content'));
+
+        // Minimal CSV parser (handles quoted fields, "" escapes, and newlines in quotes)
+        function parseCSV(text) {
+            const rows = [];
+            let row = [], field = '', inQuotes = false;
+            for (let i = 0; i < text.length; i++) {
+                const c = text[i];
+                if (inQuotes) {
+                    if (c === '"' && text[i + 1] === '"') { field += '"'; i++; }
+                    else if (c === '"') inQuotes = false;
+                    else field += c;
+                } else if (c === '"') inQuotes = true;
+                else if (c === ',') { row.push(field); field = ''; }
+                else if (c === '\n' || c === '\r') {
+                    if (c === '\r' && text[i + 1] === '\n') i++;
+                    row.push(field); field = '';
+                    if (row.length > 1) rows.push(row);
+                    row = [];
+                } else field += c;
+            }
+            if (field || row.length) { row.push(field); rows.push(row); }
+            return rows;
+        }
+
+        function getYouTubeId(url) {
+            const m = url.match(/[?&]v=([^&]+)/) || url.match(/youtu\.be\/([^?&]+)/);
+            return m ? m[1] : null;
+        }
+
+        async function loadMusic(csvPath, targetId) {
+            const target = document.getElementById(targetId);
+            try {
+                const res = await fetch(csvPath);
+                const [header, ...rows] = parseCSV(await res.text());
+                const col = name => header.indexOf(name);
+
+                rows.forEach(r => {
+                    const id = getYouTubeId(r[col('url')]);
+                    if (!id) return;
+
+                    const title = r[col('title')];
+                    const artist = r[col('artist')];
+
+                    const entry = document.createElement('div');
+                    entry.className = 'music-entry';
+
+                    const video = document.createElement('iframe');
+                    video.src = `https://www.youtube.com/embed/${id}`;
+                    video.allowFullscreen = true;
+                    video.loading = 'lazy';
+
+                    const text = document.createElement('div');
+                    text.className = 'music-text';
+
+                    const heading = document.createElement('p');
+                    const strong = document.createElement('a');
+                    strong.textContent = artist ? `${title} by ${artist}` : title;
+                    strong.href = r[col('url')]
+                    heading.appendChild(strong);
+
+                    const review = document.createElement('p');
+                    review.textContent = r[col('review')];
+
+                    text.append(heading, review);
+                    entry.append(video, text);
+                    target.appendChild(entry);
+                });
+            } catch (e) {
+                target.textContent = 'Could not load music list.';
+            }
+        }
+
+        loadMusic('assets/files/music-list.csv', 'music-content');
     </script>
 </body>
 </html>

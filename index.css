@@ -355,3 +355,38 @@ header h1 {
         margin-left: 1rem;
     }
 }
+
+.music-entry {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    padding-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border) ;
+}
+
+.music-entry iframe {
+    flex: 0 0 30%;
+    width: 30%;
+    aspect-ratio: 16 / 9;
+    border: var(--border-width) solid var(--color-border);
+}
+
+.music-text {
+    font-size: var(--font-size-small);
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+    .music-entry {
+        flex-direction: column;
+    }
+
+    .music-entry iframe {
+        flex: none;
+        width: 100%;
+    }
+}
