@@ -7,7 +7,8 @@
       "year_month": "2026-11",
       "update": "",
       "tags": [
-        "philosophy"
+        "philosophy",
+        "opinion"
       ],
       "preview": "As I type this at 2 a.m. in the morning, I am simultaneously excited and terrified to know the results of the midterm elections today/tomorrow. While most coverage seems to..."
     },
@@ -52,7 +53,8 @@
       "year_month": "2026-05",
       "update": "",
       "tags": [
-        "philosophy"
+        "philosophy",
+        "opinion"
       ],
       "preview": "A Canadian survey of children in developing countries found that when asked what they would do if they were the president of their country, most children chose to say they..."
     },
@@ -63,7 +65,8 @@
       "year_month": "2026-05",
       "update": "",
       "tags": [
-        "games"
+        "games",
+        "opinion"
       ],
       "preview": "> \"I am convinced, the way one plays chess always reflects the player's personality. If something defines his character, then it will also define his way of playing.\" -Vladmir Kramnik..."
     },
@@ -101,5 +104,5 @@
       "preview": "Testing"
     }
   ],
-  "generated": "2026-11-09T09:49:15.297437"
+  "generated": "2026-11-09T09:56:21.275477"
 }
