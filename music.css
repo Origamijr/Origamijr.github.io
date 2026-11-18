@@ -1,0 +1,111 @@
+/* Home page entries */
+.music-entry {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    padding-bottom: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    border-bottom: var(--border-width-thin) solid var(--color-border);
+}
+
+.music-entry iframe, .music-entry .music-video {
+    flex: 0 0 30%;
+}
+
+.music-text {
+    font-size: var(--font-size-small);
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+/* Click-to-load video thumbnail */
+.music-video, .music-entry iframe, .music-detail iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: var(--border-width) solid var(--color-border);
+}
+
+.music-video {
+    position: relative;
+    background: #000 center / cover;
+    cursor: pointer;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--color-text-light);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.25rem 0.9rem;
+    border-radius: 8px;
+}
+
+/* Full list table */
+.music-table-wrap {
+    overflow-x: auto;
+}
+
+.music-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.music-table th, .music-table td {
+    text-align: left;
+    vertical-align: top;
+    padding: var(--spacing-xs);
+    border-bottom: var(--border-width-thin) solid var(--color-border);
+}
+
+.music-table th {
+    white-space: nowrap;
+    border-bottom: var(--border-width) solid var(--color-border-accent);
+}
+
+.music-table th, .music-row {
+    cursor: pointer;
+    user-select: none;
+}
+
+.music-row:hover, .music-row.open {
+    background: var(--color-container-solid);
+}
+
+.music-table th.has-def {
+    text-decoration: underline dotted;
+}
+
+/* Expanded row: review on the left, radar chart on the right */
+.music-detail {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    padding: var(--spacing-sm) 0;
+}
+
+.music-detail-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.music-play {
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.music-radar {
+    flex: none;
+}
+
+@media (max-width: 480px) {
+    .music-entry {
+        flex-direction: column;
+    }
+
+    .music-entry iframe, .music-entry .music-video {
+        flex: none;
+    }
+}

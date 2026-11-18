@@ -242,9 +242,9 @@ document.addEventListener('pointerup', (e) => {
   pointerDownAt = null;
   if (dist > DRAG_THRESHOLD) return; // it was a drag/scroll, not a click
 
-  // Let real interactive elements behave normally -- don't toggle a tile
-  // underneath a link, button, or anything with a click handler.
-  if (e.target.closest('a, button, input, select, textarea, [onclick], [role="button"]')) {
+  // Only clicks on the bare background toggle tiles; page content (and any
+  // stray interactive element outside it) blocks them.
+  if (e.target.closest('.container, .navbar, a, button, input, select, textarea, label, [onclick]')) {
     return;
   }
   toggleTileAt(e.clientX, e.clientY);
