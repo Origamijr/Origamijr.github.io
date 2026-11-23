@@ -1,16 +1,33 @@
 {
   "posts": [
     {
+      "filename": "20261122_ai_phd.md",
+      "title": "Doing a PhD in the Age of AI",
+      "date": "2026-11-22",
+      "year_month": "2026-11",
+      "update": "",
+      "tags": [
+        "tech",
+        "research"
+      ],
+      "preview": "We face quite a dilemma in academia. Just last week, an anthropic employee announced that AI had proven the general form of the Riemann hypothesis, one of the so called...",
+      "slug": "doing-a-phd-in-the-age-of-ai",
+      "aliases": [],
+      "mentioned_by": []
+    },
+    {
       "filename": "20261103_electoralism.md",
       "title": "The Chasm of Democracy",
       "date": "2026-11-03",
       "year_month": "2026-11",
       "update": "",
       "tags": [
-        "philosophy",
-        "opinion"
+        "philosophy"
       ],
-      "preview": "As I type this at 2 a.m. in the morning, I am simultaneously excited and terrified to know the results of the midterm elections today/tomorrow. While most coverage seems to..."
+      "preview": "As I type this at 2 a.m. in the morning, I am simultaneously excited and terrified to know the results of the midterm elections today/tomorrow. While most coverage seems to...",
+      "slug": "the-chasm-of-democracy",
+      "aliases": [],
+      "mentioned_by": []
     },
     {
       "filename": "20260907_design_update.md",
@@ -21,7 +38,10 @@
       "tags": [
         "website"
       ],
-      "preview": "I decided to do a minor rehaul of this website to give it a little bit more personality. This post is just a quick rundown of the key changes and..."
+      "preview": "I decided to do a minor rehaul of this website to give it a little bit more personality. This post is just a quick rundown of the key changes and...",
+      "slug": "design-is-my-passion",
+      "aliases": [],
+      "mentioned_by": []
     },
     {
       "filename": "20260908_big_four.md",
@@ -32,7 +52,10 @@
       "tags": [
         "projects"
       ],
-      "preview": "Like many other people (programmers in particular) my life is a constant cycle of getting ideas for side projects, getting close to or even completing a minimum viable product, and..."
+      "preview": "Like many other people (programmers in particular) my life is a constant cycle of getting ideas for side projects, getting close to or even completing a minimum viable product, and...",
+      "slug": "the-big-four",
+      "aliases": [],
+      "mentioned_by": []
     },
     {
       "filename": "LD_ai.md",
@@ -41,10 +64,14 @@
       "year_month": "2026-04",
       "update": "2026-06-11",
       "tags": [
-        "tech",
-        "opinion"
+        "tech"
       ],
-      "preview": "This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. I have a decently strong background in..."
+      "preview": "This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. I have a decently strong background in...",
+      "slug": "ld-opinions-on-ai",
+      "aliases": [],
+      "mentioned_by": [
+        "20261122_ai_phd.md"
+      ]
     },
     {
       "filename": "20260528_peda.md",
@@ -53,10 +80,12 @@
       "year_month": "2026-05",
       "update": "",
       "tags": [
-        "philosophy",
-        "opinion"
+        "philosophy"
       ],
-      "preview": "A Canadian survey of children in developing countries found that when asked what they would do if they were the president of their country, most children chose to say they..."
+      "preview": "A Canadian survey of children in developing countries found that when asked what they would do if they were the president of their country, most children chose to say they...",
+      "slug": "my-naive-pedagogy",
+      "aliases": [],
+      "mentioned_by": []
     },
     {
       "filename": "20260519_tcgren.md",
@@ -65,10 +94,12 @@
       "year_month": "2026-05",
       "update": "",
       "tags": [
-        "games",
-        "opinion"
+        "games"
       ],
-      "preview": "> \"I am convinced, the way one plays chess always reflects the player's personality. If something defines his character, then it will also define his way of playing.\" -Vladmir Kramnik..."
+      "preview": "> \"I am convinced, the way one plays chess always reflects the player's personality. If something defines his character, then it will also define his way of playing.\" -Vladmir Kramnik...",
+      "slug": "tcg-renaissance",
+      "aliases": [],
+      "mentioned_by": []
     },
     {
       "filename": "20260416_test.md",
@@ -79,7 +110,10 @@
       "tags": [
         "website"
       ],
-      "preview": "Testing a post made directly from github to see if workflows will automatically update the metadata, subsequently posting this directly to the website with the correct date and tags."
+      "preview": "Testing a post made directly from github to see if workflows will automatically update the metadata, subsequently posting this directly to the website with the correct date and tags.",
+      "slug": "test-post",
+      "aliases": [],
+      "mentioned_by": []
     },
     {
       "filename": "20260415_recon.md",
@@ -90,7 +124,10 @@
       "tags": [
         "website"
       ],
-      "preview": "After about 2 years of site inactivity, Finally got around to redoing the site. For a while I've wanted to abandon my [old site](https://github.com/Origamijr/CapitalistManifestoDesu), which was built using the Angular..."
+      "preview": "After about 2 years of site inactivity, Finally got around to redoing the site. For a while I've wanted to abandon my [old site](https://github.com/Origamijr/CapitalistManifestoDesu), which was built using the Angular...",
+      "slug": "site-reconstruction",
+      "aliases": [],
+      "mentioned_by": []
     },
     {
       "filename": "20260415_first.md",
@@ -101,8 +138,11 @@
       "tags": [
         "website"
       ],
-      "preview": "Testing"
+      "preview": "Testing",
+      "slug": "first-post",
+      "aliases": [],
+      "mentioned_by": []
     }
   ],
-  "generated": "2026-11-09T09:56:21.275477"
+  "generated": "2026-11-22T23:36:12.363352"
 }

@@ -2,10 +2,10 @@
 title: "[LD] Opinions on AI"
 date: 2026-04-21
 update: 2026-06-11
-tags: [tech, opinion]
+tags: tech
 ---
 
-## Personal Background<a name="background"></a>
+## Personal Background
 
 This entry needs to be prefaced with a bit of background to make clear the context I'm coming from and my possible biases. 
 
@@ -13,7 +13,7 @@ I have a decently strong background in the math and engineering of modern AI, pr
 
 I am also critically online, with much of my media consumption being a combination of Youtube and Reddit. In general, I would summarize my stance as AI optimistic, but severely critical of the current trends surrounding AI.
 
-## AI Landscape<a name="landscape"></a>
+## AI Landscape
 
 ### AI is overhyped
 
@@ -37,7 +37,7 @@ While we might be in a plateau in terms of core technology, I think we still hav
 
 Practically though, I think AI can (with the right wrapper) perform mostly any complex reasoning tasks to a generally productive level. I see the two key paradigms extending LLMs towards this aim are multimodality (vision and audio) and tool calling. In this sense, ignoring compute costs, AI seems plenty capable for most tasks, which is probably "close enough" for the social paradigm we expected AGI to bring.
 
-## AI Coding<a name="coding"></a>
+## AI Coding
 
 Coding has become a task LLMs have become particularly adept at for a variety of reasons. One can point to the bias towards coding tasks as the people developing LLMs are themselves coders. You can also point to the vast amounts of open source code readily available to be scraped and trained upon. Perhaps the most important feature of coding tasks is that their correctness can, for the most part, be immediately and automatically verifiable, leading to more grounded training loops. Nevertheless, interestingly coding jobs are seemingly among the most impacted professions of this AI boom. The opinions I hold about AI coding are likely very cold takes, but they are still worth spelling out
 
@@ -55,7 +55,7 @@ There is also a clear worry of AI reliance leading to a deterioration of coding 
 
 At the moment of writing, we are seeing a drastic rise in pricing of the mainstream, more capable coding models. This, hopefully, wakes people up to the fact that if they want to be developers, they really should just learn to code themselves ~~or switch to Chinese/local models~~.
 
-## AI Art<a name="art"></a>
+## AI Art
 
 Although I don't really have a horse in the race for this debate, I'm pretty deeply invested on the matter of AI in the creative fields. Generative AI, in particular, dominates the landscape of this debate. With the current state of AI, I firmly place myself within the anti-AI art side, mostly for the purposes of signaling a position I think will yield the "best" outcome. There are, however, many underdiscussed nuances in surface discourse.
 

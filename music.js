@@ -51,9 +51,12 @@ const isFeatured = e => /^(1|true|yes|y)$/i.test((e.featured || '').trim());
 const hasReview = e => !!(e.review || '').trim() && !e.review.includes('TODO');
 const parseGenres = s => (s || '').split(/[;,]/).map(g => g.trim()).filter(Boolean);
 
+// Provisional entries are songs being considered in the music manager — never shown on the site
+const isProvisional = e => /^(1|true|yes|y)$/i.test((e.provisional || '').trim());
+
 async function fetchMusic() {
     const res = await fetch(MUSIC_CSV);
-    return parseCSV(await res.text());
+    return parseCSV(await res.text()).filter(e => !isProvisional(e));
 }
 
 function createEmbed(id) {

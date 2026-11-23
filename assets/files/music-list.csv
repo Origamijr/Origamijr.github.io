@@ -1,12 +1,285 @@
-added,title,artist,producer,attribution,genre,url,date_listened,enjoyment,appeal,musicality,intrigue,accessibility,featured,review
-2026-11-17,分かっちゃいないね,むﾄ,monet,むﾄ,Utaite; Vocaloid,https://www.youtube.com/watch?v=1SRZOltRhhk,2026-11,4.5,,3.0,3.5,3.0,,_TODO
-2026-11-14,あなぐらぐらし,ヰ世界情緒,きくお,ヰ世界情緒,Utaite; Vocaloid,https://www.youtube.com/watch?v=V2XcYkq9LxI,2026-10,,,,,,,_TODO
-2026-11-14,hp,𓆑,nakano4,𓆑,Utaite; Vocaloid,https://www.youtube.com/watch?v=wJxa_xlliGg,2026-11,,,,,,,_TODO
-2026-11-14,あなたしか見えないの,"可不, 星界, 裏命, 狐子, 羽累",r-906,r-906,Vocaloid; Electronic,https://www.youtube.com/watch?v=xv7hJ32xK94,2024-05,,,,,,,_TODO
-2026-11-14,ただ病名が欲しかった,"可不, 星界, カゼヒキ",kyiku,kyiku,Vocaloid,https://www.youtube.com/watch?v=FSLxRRQdNs4,2026-11,3.8,,3.0,4.0,2.5,,_TODO
-2026-11-14,メクルメ,Diα,フロクロ,Diα,Utaite; Game; Electronic,https://www.youtube.com/watch?v=qvn40WWJkTc,2026-11,4.5,,3.5,2.5,3.0,,_TODO
-2026-11-09,Q,nui,椎名もた,nui,Utaite; Vocaloid,https://www.youtube.com/watch?v=gJypkz3-rTk,2026-08,4.6,4.0,2.0,3.5,2.7,1,"Absolutely haunting. Of powapowa-p's discography, this song always makes it into my playlist the most, and it always evokes complicated emotions. The classic rock combined with the light glockenspiel illustrate an innocent childlike angst, followed by a form of quiet resignation. We will never know the meaning of the title, whether it is a homophone for the japanese word for ""suffering"", whether Q stands for question reflecting mental turbulence, or both. In the case of the latter, knowledge of the answer is haunting, for it illustrates a tragic resolve."
-2026-11-09,ワンダー,初音ミク,r-906,r-906,Vocaloid; Electronic,https://www.youtube.com/watch?v=6ObvFPLk8eI,2026-09,4.2,3.7,2.5,3.0,3.3,1,"r-906 has done it again, but this time with a new retro, disco vibe (and catchy chorus). I sorta get the vibe that the theme of the song is escapism, calling to an upbeat backrooms-esque aesthetic. In a way this goes hand-in-hand with Fisher's hauntology, the feeling of being trapped in time long past."
-2026-11-09,ray (超かぐや姫！ Version),,BUMP OF CHICKEN,,Anime,https://www.youtube.com/watch?v=075raB27CW8,2026-05,3.8,3.5,1.8,3.0,2.4,1,"Movie version of an old Bump of Chicken song, also one of those songs that got my to actually go and watch the source. Usually don't care much for covers in anime, but this one seemed to capture a certain energy not captured by the original (and prosekai version). Before watching, only knowing the context of the original Kaguya-hime story, I got the impression that this song was a sort of optimistic masking of some a sad departure. After watching the movie, it's immediately recontextualized as a clear celebration. Simple song, but quality storytelling."
-2026-11-09,君が僕を嗤う日,むﾄ,,むﾄ,Utaite; Vocaloid,https://www.youtube.com/watch?v=nz5Hhyzs0b8,2026-07,4.8,4.5,3.0,2.5,3.0,1,"Beautiful cover of a song from an producer that wasn't on my radar. Falls in a ""bittersweet"" type of song nodding towards a sort of nostalgia. The pen scratches in the quiet last verse is absolute ASMR, juxtaposed directly with the high wpm singing in the chorus, it evokes a sort of shift from sweet remembrance to a reluctant distance (temporal, spatial, or interperonal, lots of room for interpretation)."
-2026-11-09,かなしばりに遭ったら,Diα,avaraya,Diα,Utaite; Vocaloid; Electronic,https://www.youtube.com/watch?v=nTL1715yN-8,2026-10,3.9,,4.0,3.5,2.5,1,"A well performed cover that captures much of the texture and tone from avaraya's original. Stilted, syncopated vocals with distortion effects to make the voice feel artificial, which, in conjunction with the dialogue at the end, paint a nightmarish conflict between dreams and reality."
+added,title,alt_titles,artist,producer,attribution,genre,url,date_listened,enjoyment,appeal,musicality,intrigue,accessibility,featured,review,provisional
+2026-11-23,Snow halation,,μ's,,μ's,Idol; J-Pop; Anime,https://www.youtube.com/watch?v=CKUd7cJWH74,2014-04,0.8,1.1,0.6,0.9,0.6,,"Was my favorite love live song for a while. Turns out I'm pretty normie in that regard. Either way, trying to learn animenz's version of this on piano is something I try every December to no avail. One distinct memory I have of this song is listening to it on loop on my iPod touch the last night of summer 2014 all night until a couple hours before school started to do the AP composition homework I somehow procrastinated doing until the very last moment (somehow didn't fail that assignment, but still ended up being the only grade below A I got during high school)",
+2026-11-23,無敵のSoldier,Muteki no Soldier,やなぎなぎ,麻枝准,やなぎなぎ,J-Rock,https://www.youtube.com/watch?v=u6jA2Q_5Wv8,2013,1.9,1.2,1.9,3.3,0.7,,"The song that started my love for music. Introduced to me by my sister, I wasn't really invested in any song before until this one. It's the way that the song was an absolute banger, while also telling a touching story. After listening to this song, I ended up listening to the rest of the album, and eventually fell down the youtube rabbit hole of other Japanese songs until I was only listening to Japanese music.",
+2026-11-17,分かっちゃいないね,Wakacchainai ne,むﾄ,monet,むﾄ,Utaite; Vocaloid,https://www.youtube.com/watch?v=1SRZOltRhhk,2026-11,1.6,2.8,2.6,3.3,3.3,,,
+2026-11-14,あなぐらぐらし,,ヰ世界情緒,きくお,ヰ世界情緒,Utaite; Vocaloid,https://www.youtube.com/watch?v=V2XcYkq9LxI,2026-10,1.2,1.1,4.8,3.4,1.3,,,
+2026-11-14,hp,,𓆑,nakano4,𓆑,Utaite; Vocaloid,https://www.youtube.com/watch?v=wJxa_xlliGg,2026-11,1.6,2.6,1.5,1.9,2.2,,,
+2026-11-14,あなたしか見えないの,,"可不, 星界, 裏命, 狐子, 羽累",r-906,r-906,Vocaloid; Electronic,https://www.youtube.com/watch?v=xv7hJ32xK94,2024-05,2.4,2.1,2.4,2.7,1.5,,,
+2026-11-14,ただ病名が欲しかった,,"可不, 星界, カゼヒキ",kyiku,kyiku,Vocaloid,https://www.youtube.com/watch?v=FSLxRRQdNs4,2026-11,1.3,1.3,2.7,2.7,2.6,,,
+2026-11-14,メクルメ,,Diα,フロクロ,Diα,Utaite; Game; Electronic,https://www.youtube.com/watch?v=qvn40WWJkTc,2026-11,3.5,4.0,3.7,1.5,2.7,1,"Fascinating song musically, that seems to say at lot at once while also saying nothing at all. A sort of self-aware naive philosophy being conveyed in an awkward and clumsy fashion (it's the image song of a character I'm unfamiliar with). Something about the song does it for me somehow, and I love it.",
+2026-11-09,Q,,nui,椎名もた,nui,Utaite; Vocaloid,https://www.youtube.com/watch?v=gJypkz3-rTk,2026-08,2.8,3.1,0.7,2.3,2.5,1,"Absolutely haunting. Of powapowa-p's discography, this song always makes it into my playlist the most, and it always evokes complicated emotions. The classic rock combined with the light glockenspiel illustrate an innocent childlike angst, followed by a form of quiet resignation. We will never know the meaning of the title, whether it is a homophone for the japanese word for ""suffering"", whether Q stands for question reflecting mental turbulence, or both. In the case of the latter, knowledge of the answer is haunting, for it illustrates a tragic resolve.",
+2026-11-09,ワンダー,,初音ミク,r-906,r-906,Vocaloid; Electronic,https://www.youtube.com/watch?v=6ObvFPLk8eI,2026-09,2.5,3.7,3.4,3.5,2.5,1,"r-906 has done it again, but this time with a new retro, disco vibe (and catchy chorus). I sorta get the vibe that the theme of the song is escapism, calling to an upbeat backrooms-esque aesthetic. In a way this goes hand-in-hand with Fisher's hauntology, the feeling of being trapped in time long past.",
+2026-11-09,ray (超かぐや姫！ Version),,,BUMP OF CHICKEN,,Anime,https://www.youtube.com/watch?v=075raB27CW8,2026-05,1.9,3.2,1.6,1.6,4.4,1,"Movie version of an old Bump of Chicken song, also one of those songs that got my to actually go and watch the source. Usually don't care much for covers in anime, but this one seemed to capture a certain energy not captured by the original (and prosekai version). Before watching, only knowing the context of the original Kaguya-hime story, I got the impression that this song was a sort of optimistic masking of some a sad departure. After watching the movie, it's immediately recontextualized as a clear celebration. Simple song, but quality storytelling.",
+2026-11-09,君が僕を嗤う日,,むﾄ,,むﾄ,Utaite; Vocaloid,https://www.youtube.com/watch?v=nz5Hhyzs0b8,2026-07,4.4,4.2,2.6,2.4,3.0,1,"Beautiful cover of a song from an producer that wasn't on my radar. Falls in a ""bittersweet"" type of song nodding towards a sort of nostalgia. The pen scratches in the quiet last verse is absolute ASMR, juxtaposed directly with the high wpm singing in the chorus, it evokes a sort of shift from sweet remembrance to a reluctant distance (temporal, spatial, or interperonal, lots of room for interpretation).",
+2026-11-09,かなしばりに遭ったら,,Diα,あばらや,Diα,Utaite; Vocaloid; Electronic,https://www.youtube.com/watch?v=nTL1715yN-8,2026-10,2.4,1.9,4.3,4.5,1.4,,"A well performed cover that captures much of the texture and tone from avaraya's original. Stilted, syncopated vocals with distortion effects to make the voice feel artificial, which, in conjunction with the dialogue at the end, paint a nightmarish conflict between dreams and reality.",
+2026-11-22,星が瞬くこんな夜に,,supercell,,,J-Pop,itunes:E1508843D805D71D,2019-08,,,,,,,,1
+2026-11-22,あいつら全員同窓会,Inside Joke,ずっと真夜中でいいのに。,,ずっと真夜中でいいのに。,J-Rock,https://www.youtube.com/watch?v=ZUwaudw8ht0,2021-07,4.4,4.4,2.7,2.5,4.3,1,"Although I love basically all of zutomayo's discography, I've pretty much settled on this one as my favorite. It's a very simple piece, and it's hard to describe why I resonate with this song so much. Thematically, I interpret this as an admittance of and disconnection, while finding personal satisfaction within oneself. It's a sort of paradox where loneliness is solved inside of one's self, which itself causes a moment of levity in it's ridiculousness.",
+2026-11-22,Gold,,EGOIST,,EGOIST,Anime; Electronic; J-Rock,https://www.youtube.com/watch?v=vgDvXwS8S34,2022-05,1.7,3.6,3.3,1.1,3.4,,,
+2026-11-22,フォニイ,phony,星街すいせい,ツミキ,星街すいせい,Utaite; Vocaloid; VTuber,https://www.youtube.com/watch?v=N029UUlH1Dc,2022-04,3.2,3.8,2.5,2.4,3.6,,,
+2026-11-22,勘冴えて悔しいわ,,ずっと真夜中でいいのに。,,,J-Rock,itunes:99B87DC553FEAD2C,2019-11,,,,,,,,1
+2026-11-22,PRIMALove,,ClariS,,,J-Pop,itunes:EA78CD488EF3CBF0,2019-01,,,,,,,,1
+2026-11-22,好きと言われた日,,EGOIST,,,,itunes:844AC0172358AA72,2019-01,,,,,,,,1
+2026-11-22,地球最後の告白を,,H△G,,,Utaite,itunes:BCA8C6F5B8EA566B,2019-09,,,,,,,,1
+2026-11-22,勘ぐれい,,ずっと真夜中でいいのに。,,,J-pop,itunes:A13F872F7BAFE110,2021-03,,,,,,,,1
+2026-11-22,かかわり,,TrySail,,,JPop,itunes:5EE290876EB84804,2021-03,,,,,,,,1
+2026-11-22,MIND CONDUCTOR,,YURiKA,,,Anime,itunes:66A1305E319154FD,2020-01,,,,,,,,1
+2026-11-22,センチメンタルハートボーイ,,Such,,,,itunes:4D1023BF27F905DC,2019-05,,,,,,,,1
+2026-11-22,桜色プリズム,,Endorfin,,,J-Pop,itunes:48797E9C976FC30E,2019-10,,,,,,,,1
+2026-11-22,褪せたハナミドリ,,星街すいせい,レフティーモンスターP,星街すいせい,J-Pop; VTuber,https://www.youtube.com/watch?v=Y6Ybz_yjQ6U,2023-01,2.2,4.5,1.4,1.1,4.3,,,
+2026-11-22,AliVe,,AliA,,,J-Pop,itunes:8456CB3DFA2EE0D9,2019-10,,,,,,,,1
+2026-11-22,TRUE GIRL SHOW,,星街すいせい,,,J-Pop,itunes:48ADBDF44D967040,2023-01,,,,,,,,1
+2026-11-22,九番目の迷路,,アリスシャッハと魔法の楽団,,,Game,itunes:EF369241B91F985B,2021-01,,,,,,,,1
+2026-11-22,ロウワー,Lower one's eyes,25時、ナイトコードで。,ぬゆり,25時、ナイトコードで。,Game; Utaite; Vocaloid,https://www.youtube.com/watch?v=16M9oC-a5bY,2023-09,2.7,3.4,2.0,2.7,1.6,,,
+2026-11-22,ロスタルジー,Lostalgie,ホタル,youまん,ホタル,Utaite; Vocaloid; J-Rock,https://www.youtube.com/watch?v=vjpsX8N91PQ,2024-04,4.1,4.2,3.0,2.7,2.3,,"An underrated cover artist covering a song by an underrated producer. This song perfectly conveys the ""bitter"" part of ""bittersweet"" in the genre of songs about nostalgia. There are so many sour parts throughout the song, where the melody seems to disagree with the accompaniment, almost abnormally flat at times and it's absolutely so tasteful. Hotaru does masterful emotional singing at the bridge and final chorus, making the climax actually feel satisfying and conclusive, tying directly to the satisfaction from closing the book on a nostalgia trip.",
+2026-11-22,ヒカリの方へ (feat. Such),,PSYQUI,,,,itunes:1937736E68ACCD29,2019-05,,,,,,,,1
+2026-11-22,ごまかし,,TrySail,,,Anime,itunes:1D6B76FC90AF43A3,2020-01,,,,,,,,1
+2026-11-22,残機,,ずっと真夜中でいいのに。,,,Rock,itunes:A0D0B7946FEAE7C7,2024-01,,,,,,,,1
+2026-11-22,よいまちカンターレ,,コーロまちカド,,,Anime,itunes:C754415A87009681,2020-01,,,,,,,,1
+2026-11-22,"キティ (feat. 宵崎奏, 朝比奈まふゆ, 東雲絵名, 暁山瑞希 & 鏡音レン)",,25時、ナイトコードで。,,,Anime,itunes:9841FD19CA36E75F,2023-12,,,,,,,,1
+2026-11-22,Newton,,星街すいせい,,,J-Pop,itunes:EE35FFB909A7B5D2,2023-01,,,,,,,,1
+2026-11-22,ミルククラウン・オン・ソーネチカ,,MORE MORE JUMP！,,,Game,itunes:C876442DB14F4E2A,2023-09,,,,,,,,1
+2026-11-22,脳裏上のクラッカー,,ずっと真夜中でいいのに。,,,J-Rock,itunes:0DD6F2CC74A23FD2,2019-11,,,,,,,,1
+2026-11-22,NEO,,じん feat. 初音ミク,,,Vocaloid,itunes:0F344316721AC6A2,2023-12,,,,,,,,1
+2026-11-22,BANG!!!,,EGOIST,,,J-Pop,itunes:9860FD63424D84D5,2022-04,,,,,,,,1
+2026-11-22,A/Z,,SawanoHiroyuki[nZk]:mizuki,,,J-Pop,itunes:1CAFA714BCA3FBCD,2019-01,,,,,,,,1
+2026-11-22,border,,ClariS,,,Anime,itunes:C8312171D825E252,2019-08,,,,,,,,1
+2026-11-22,逆光,,坂本 真綾,,,Game,itunes:FC0CFEFFA1C6D410,2019-09,,,,,,,,1
+2026-11-22,ヒステリックナイトガール (feat. Such),,PSYQUI,,,J-Pop,itunes:C92871C767081E50,2019-01,,,,,,,,1
+2026-11-22,ジェヘナ,,wotaku feat. 初音ミク,,,Vocaloid,itunes:3CD456BE783FFFE3,2023-12,,,,,,,,1
+2026-11-22,starlog,,ChouCho,,,Anime,itunes:C40F001609B5C906,2018-09,,,,,,,,1
+2026-11-22,ケアレス,,ClariS,,,Anime,itunes:0FA3F026EE25A240,2021-09,,,,,,,,1
+2026-11-22,My song,,角巻わため,,,J-Pop,itunes:C225D074EDAD7BB6,2022-07,,,,,,,,1
+2026-11-22,Scar/let,,ReoNa,,,Anime,itunes:9EEA2553AD8DB824,2022-07,,,,,,,,1
+2026-11-22,ピンクレモネード,,三月のパンタシア,,,Anime,itunes:912934DC6763B54D,2019-10,,,,,,,,1
+2026-11-22,Sing My Pleasure,,ヴィヴィ (Vo.八木海莉),,,Anime,itunes:FE57904F7C0788F3,2021-06,,,,,,,,1
+2026-11-22,ONESELF,,Twinfield feat. 初音ミク,,,Vocaloid,itunes:45040BBE0B418117,2023-12,,,,,,,,1
+2026-11-22,ラブレター,,YOASOBI,,,J-pop,itunes:7DF2C61DCA1D2191,2021-09,,,,,,,,1
+2026-11-22,ソワレ,,星街すいせい,,,J-Pop,itunes:21D7AC74BB6A2247,2023-01,,,,,,,,1
+2026-11-22,アディオス,,ダズビー ,,,J-Pop,itunes:E3C9A1D395DE9623,2023-01,,,,,,,,1
+2026-11-22,VIOLET,,Ninomae Ina'nis,,,J-Pop,itunes:CB4B2CC2AEDE333D,2021-12,,,,,,,,1
+2026-11-22,猫リセット,,ずっと真夜中でいいのに。,,,Rock,itunes:4DFA6460219376E7,2022-04,,,,,,,,1
+2026-11-22,Daisy,,花鋏キョウ,,,VTuber,itunes:5FB556BDDF02CBB0,2022-08,,,,,,,,1
+2026-11-22,フライブルクとエンドロウル (Extended ver.),,アリスシャッハと魔法の楽団,,,Game,itunes:AE73A1E7AA7E3276,2021-01,,,,,,,,1
+2026-11-22,天使の翼。,,A4。feat. 可不＆ゲキヤク,,,Vocaloid,itunes:DC6076A229C771F8,2023-12,,,,,,,,1
+2026-11-22,スロウリー,,明透,,,J-Pop,itunes:17A162062A657271,2022-10,,,,,,,,1
+2026-11-22,"Star light, Star bright",,ナノ,,,Anime,itunes:8B8FE52EE1FBFCC3,2019-10,,,,,,,,1
+2026-11-22,違う曲にしようよ,,ずっと真夜中でいいのに。,,,Rock,itunes:4E27DEB8162B26E3,2022-04,,,,,,,,1
+2026-11-22,六月は雨上がりの街を書く,,ヨルシカ,,,J-Rock,itunes:508ED8CB1155981A,2019-12,,,,,,,,1
+2026-11-22,Tempestissimo (In un dolore da record),,t+pazolite,,,Game,itunes:59E6645326DADDEF,2023-01,,,,,,,,1
+2026-11-22,トラフィック・ジャム,,Vivid BAD SQUAD,,,Game,itunes:4F84214954B08A4B,2023-09,,,,,,,,1
+2026-11-22,灼熱にて純情(wii-wii-woo),,星街すいせい,,,J-Pop,itunes:1018463943099D2D,2023-01,,,,,,,,1
+2026-11-22,プシ,,r-906,,,Vocaloid,itunes:8EBE679830D0A600,2023-12,,,,,,,,1
+2026-11-22,ヒューマノイド,,ずっと真夜中でいいのに。,,,J-Rock,itunes:64A5E37872C7DE69,2019-11,,,,,,,,1
+2026-11-22,怪物,,YOASOBI,,,Anime,itunes:A514D719B44A9460,2021-09,,,,,,,,1
+2026-11-22,花の塔,,さユり,,,,itunes:A8F5DA204F83B528,2022-08,,,,,,,,1
+2026-11-22,ヒロメネス,,Mashumairesh!!(CV:遠野ひかる、夏吉ゆうこ、和多田美咲、山根 綺),,,Anime,itunes:A05248ED71BD7FBD,2021-06,,,,,,,,1
+2026-11-22,ハローマリーナ,,稲葉曇 feat. 歌愛ユキ,,,Vocaloid,itunes:BF973C875435C7AB,2022-07,,,,,,,,1
+2026-11-22,forget-me-not,,ReoNa,,,Anime,itunes:C87F38FD5052F160,2019-04,,,,,,,,1
+2026-11-22,テレキャスター・ストライプ,,ポルカドットスティングレイ,,,J-Rock,itunes:C9D3AFF54E4A24CE,2019-09,,,,,,,,1
+2026-11-22,劇場愛歌,,nameless,,,Utaite,itunes:9EB11C6DAD9D3345,2020-02,,,,,,,,1
+2026-11-22,101,,三月のパンタシア,,,Anime,itunes:306C0020E789AE5D,2021-09,,,,,,,,1
+2026-11-22,ツキナミ,,分島花音,,,J-Pop,itunes:DEB300715C666B62,2018-09,,,,,,,,1
+2026-11-22,カラフル 2017,,ClariS,,,J-Pop,itunes:5B8F40D1129C364F,2019-01,,,,,,,,1
+2026-11-22,ビートシンカー,,DIVELA feat. 初音ミク,,,Vocaloid,itunes:59D3E6245CFE8918,2020-06,,,,,,,,1
+2026-11-22,ココロナンセンス[ピノキオピー Remix],,ピノキオピー feat. 初音ミク,,,Vocaloid,itunes:AC95B14CD0FCFB13,2020-06,,,,,,,,1
+2026-11-22,Stella-rium,,鹿乃,,,J-Pop,itunes:8F52EF4FFCE332CF,2019-05,,,,,,,,1
+2026-11-22,True Story,,春奈 るな,,,Anime,itunes:A906D0F8469031E9,2019-08,,,,,,,,1
+2026-11-22,Dont you want me (feat. Such),,PSYQUI,,,,itunes:14BE2F700DCC470D,2019-05,,,,,,,,1
+2026-11-22,ミスリード・ミスリード,,Omoi feat. 初音ミク,,,,itunes:41F8AEE9B94C07C0,2023-12,,,,,,,,1
+2026-11-22,Rat A Tat,,Midnight Grand Orchestra,,,,itunes:0A4979F4C47FB130,2022-10,,,,,,,,1
+2026-11-22,ディアブレイブ,,鹿乃,,,J-Pop,itunes:B3A1D25BC955CB4B,2019-05,,,,,,,,1
+2026-11-22,AxxxiS,,LiSA,,,J-Pop,itunes:1FB32107D2050C76,2019-01,,,,,,,,1
+2026-11-22,二息歩行 (Reloaded),,DECO*27 feat. 初音ミク,,,Vocaloid,itunes:591ABEAD265DFAA8,2022-07,,,,,,,,1
+2026-11-22,恋愛脳,,ナナヲアカリ,,,Anime,itunes:3AD39AFEF80E46D9,2022-08,,,,,,,,1
+2026-11-22,エイリアンエイリアン (Nhato Remix),,Nhato feat. 初音ミク,,,Vocaloid,itunes:079CBDD6BBACF522,2019-05,,,,,,,,1
+2026-11-22,あいわな,,湊あくあ,,,VTuber,itunes:4795D1BBDAC12BC8,2022-07,,,,,,,,1
+2026-11-22,熱異常,Heat abnormal,水槽,いよわ,水槽,Utaite; Vocaloid; Electronic,https://www.youtube.com/watch?v=Kc0-AC3sUKc,2024-11,4.2,4.0,4.6,3.7,1.4,,"One of the those songs with unreasonably fast vocals that only comes out of vocaloid, and this cover artist hits it out of the park. The themes are pretty on the nose, being a song about the end of the world, and the panic, confusion, and anger that comes with it (In my headcannon, I tie this to global warming). It's a fairly bleak song, and listening to it captures my own rage against the unreasonable systems that continue to doom us.",
+2026-11-22,guh,,Mori Calliope,,,J-Pop,itunes:FF908CEEB22E29C9,2021-11,,,,,,,,1
+2026-11-22,ミラーチューン,,ずっと真夜中でいいのに。,,,Rock,itunes:C11247EFB82122FB,2024-01,,,,,,,,1
+2026-11-22,眩しいDNAだけ,,ずっと真夜中でいいのに。,,,J-Rock,itunes:4AC439BB524D0346,2019-11,,,,,,,,1
+2026-11-22,夕凪、某、花惑い,,ヨルシカ,,,J-Rock,itunes:008D4D412DDAE3B5,2019-12,,,,,,,,1
+2026-11-22,サンセットマーチ,,鎖那,,,Utaite,itunes:55105E330AAE9F2A,2020-03,,,,,,,,1
+2026-11-22,The Grim Reaper is a Live-Streamer,,Mori Calliope,,,J-Pop,itunes:DED39F4F0590EF4C,2021-11,,,,,,,,1
+2026-11-22,Eternal Star,,亜咲花 ,,,Anime,itunes:EA74098B19D41FBC,2019-08,,,,,,,,1
+2026-11-22,Last Promise,,山崎 エリイ,,,Anime,itunes:C948394213DE9655,2020-01,,,,,,,,1
+2026-11-22,Higher's High,,ナナヲアカリ,,,Anime,itunes:69974BB89EA7426E,2022-08,,,,,,,,1
+2026-11-22,カトラリー,,25時、ナイトコードで。,,,Game,itunes:7406869F03B4BA28,2023-09,,,,,,,,1
+2026-11-22,いじめっ子Bully,,Mori Calliope,,,J-Pop,itunes:BF2EF7C607568BE7,2021-11,,,,,,,,1
+2026-11-22,end of a life,,Mori Calliope,,,J-Pop,itunes:6225E527555E8692,2021-11,,,,,,,,1
+2026-11-22,Relive,,nonoc,,,Anime,itunes:962C7F95985A8799,2021-06,,,,,,,,1
+2026-11-22,メデ,,月詠み,,,J-Rock,itunes:07D15D44C3A5D4BD,2022-07,,,,,,,,1
+2026-11-22,ファーストラスト,,せきこみごはん feat. 初音ミク,,,Vocaloid,itunes:1405431FB10C1FF3,2024-06,,,,,,,,1
+2026-11-22,Red,,Mori Calliope,,,J-Pop,itunes:93A07B3A117C62D7,2021-11,,,,,,,,1
+2026-11-22,Wicked feat. Mori Calliope,,星街すいせい,,,J-Pop,itunes:B25102CE9CC51DE2,2022-04,,,,,,,,1
+2026-11-22,Shout Baby,,緑黄色社会,,,Anime,itunes:92F5750DDA57908D,2021-09,,,,,,,,1
+2026-11-22,踊,,Ado,,,J-Pop,itunes:0C22CF50FB08D43E,2022-07,,,,,,,,1
+2026-11-22,フライブルクとエンドロウル,,アリスシャッハと魔法の楽団,,,Game,itunes:B1554F9913B3771F,2021-01,,,,,,,,1
+2026-11-22,ラヴィット,,ピノキオピー feat. 初音ミク,,,Vocaloid,itunes:71CA80FB75725772,2022-07,,,,,,,,1
+2026-11-22,お勉強しといてよ,,ずっと真夜中でいいのに。,,,J-pop,itunes:CE49049073520561,2021-03,,,,,,,,1
+2026-11-22,ナナヒツジ,,シナリオアート,,,Anime,itunes:7F524B0FE5A8FA9F,2020-01,,,,,,,,1
+2026-11-22,失礼しますが、RIP♡,,Mori Calliope,,,J-Pop,itunes:AF7ED72647C819B1,2021-11,,,,,,,,1
+2026-11-22,X.U.,,SawanoHiroyuki[nZk]:Gemie,,,J-Pop,itunes:4EAA70F41F407B23,2019-01,,,,,,,,1
+2026-11-22,CHASE!,,優木せつ菜(CV.楠木ともり),,,J-Rock,itunes:5EF668D69D77D5E3,2021-06,,,,,,,,1
+2026-11-22,やっぱり雨は降るんだね,,ツユ,,,J-Pop,itunes:BA8235CBA03C55DA,2021-06,,,,,,,,1
+2026-11-22,Prologue,,美波,,,J-Rock,itunes:886E7B42F9F2A01D,2019-08,,,,,,,,1
+2026-11-22,ヴァンパイア,,DECO*27 feat. 初音ミク,,,Vocaloid,itunes:2DEF5F9E34D51D66,2022-07,,,,,,,,1
+2026-11-22,LOVE & ROLL,,supercell,,,J-Pop,itunes:615901B19B0366AD,2019-08,,,,,,,,1
+2026-11-22,Awake Now,,雄之助 feat. 初音ミク,,,Vocaloid,itunes:FE50547CDCD32539,2023-12,,,,,,,,1
+2026-11-22,侵蝕,,yoei.,,,Utaite,itunes:3BF61B4910EBBA58,2024-11,,,,,,,,1
+2026-11-22,外道讃歌,,Fantastic Youth,,,Anime,itunes:CA472D1229680105,2022-07,,,,,,,,1
+2026-11-22,正義,,ずっと真夜中でいいのに。,,,J-Rock,itunes:B66E014D1DC29F6B,2019-11,,,,,,,,1
+2026-11-22,DEAD BEATS,,Mori Calliope,,,J-Pop,itunes:00B8DEF32DE4598B,2021-11,,,,,,,,1
+2026-11-22,ベノム[MARETU Remix],,MARETU feat. 初音ミク,,,Vocaloid,itunes:403DD32601AD8BF4,2020-06,,,,,,,,1
+2026-11-22,Live Again,,Mori Calliope,,,J-Pop,itunes:16C3DF2B39F900B9,2021-11,,,,,,,,1
+2026-11-22,ASH,,LiSA,,,J-Pop,itunes:98BD6C2213DD81CE,2019-01,,,,,,,,1
+2026-11-22,君のせい ,,The Peggies,,,Anime,itunes:8340A7324BA43B01,2019-02,,,,,,,,1
+2026-11-22,ゴーストルール,,ゆいこんぬ,,,,itunes:26FD059A8372840F,2019-04,,,,,,,,1
+2026-11-22,私に帰る旅,,FROZEN  QUALIA,,,J-Pop,itunes:82C6B5FE77C228DC,2020-02,,,,,,,,1
+2026-11-22,パパパ,,斉藤 朱夏,,,Anime,itunes:37AF880AFD5BE8FE,2021-09,,,,,,,,1
+2026-11-22,脳内革命ガール,,れをる,,,Utaite,itunes:22EC029FAC3E83B1,2018-09,,,,,,,,1
+2026-11-22,Starry Jet,,星街すいせい,,,J-Pop,itunes:FD17A036D2496E7E,2021-09,,,,,,,,1
+2026-11-22,Off With Their Heads,,Mori Calliope,,,J-Pop,itunes:D658EBFBC91301F3,2021-11,,,,,,,,1
+2026-11-22,Your voice so... (feat. Such),,PSYQUI,,,,itunes:6062B072E3080EE2,2019-05,,,,,,,,1
+2026-11-22,1000年生きてる,,いよわ,,,Vocaloid,itunes:87055F036FAE64DA,2024-04,,,,,,,,1
+2026-11-22,Highway,,Midnight Grand Orchestra,,,,itunes:7EB9713668D25CD0,2022-10,,,,,,,,1
+2026-11-22,Cursed Night,,Mori Calliope,,,J-Pop,itunes:E897AF3EE6568782,2021-11,,,,,,,,1
+2026-11-22,昼鳶,,ヨルシカ,,,J-Pop,itunes:09ED3A73E3165AF8,2021-06,,,,,,,,1
+2026-11-22,Sulfur,,ぺのれり,,,Game,itunes:480798987FDDD178,2021-01,,,,,,,,1
+2026-11-22,ロストアンブレラ,,稲葉曇 feat. 歌愛ユキ,,,Rock,itunes:83EA1A34A65F7E36,2022-07,,,,,,,,1
+2026-11-22,オツキミリサイタル,,ゆいこんぬ,,,Utaite,itunes:B1F97A7EEC0DC3FC,2020-01,,,,,,,,1
+2026-11-22,Cyaegha,,USAO,,,Game,itunes:BEB57FD20602A572,2021-01,,,,,,,,1
+2026-11-22,ピンキーフック,,麻倉 もも,,,Anime,itunes:0BDE5D7566C67C0B,2021-09,,,,,,,,1
+2026-11-22,心という名の不可解,,Ado,,,J-Pop,itunes:6B76821A616D4D5A,2022-07,,,,,,,,1
+2026-11-22,ロックな君とはお別れだ,,ツユ,,,J-Pop,itunes:6ED13E7815E2A249,2021-06,,,,,,,,1
+2026-11-22,Allegro,,Midnight Grand Orchestra,,,,itunes:650BB935624CB760,2022-10,,,,,,,,1
+2026-11-22,talking,,KANA-BOON,,,Anime,itunes:BF0AE33EAF6AC7BC,2020-01,,,,,,,,1
+2026-11-22,シンデレラ,,サイダーガール ,,,Anime,itunes:8BD67652D693C8F4,2022-07,,,,,,,,1
+2026-11-22,アンノウンマザーグース,,Fantastic Youth,,,Utaite,itunes:F95AF0FC98E9236D,2019-10,,,,,,,,1
+2026-11-22,花溺れ,Hana Obore; Drowning in Flowers,Vivid BAD SQUAD,shikisai,Vivid BAD SQUAD,Game; Vocaloid; Utaite,https://www.youtube.com/watch?v=t6jj-Y_0Qso,2025-08,3.0,3.8,3.9,2.3,3.4,,,
+2026-11-22,ライフ・イズ・ビューティフォー,,ReoNa,,,Anime,itunes:AAD9A479BDEB0E3D,2022-07,,,,,,,,1
+2026-11-22,お気に召すまま,,Eve,,,J-pop,itunes:33E5F23CCC93E844,2020-05,,,,,,,,1
+2026-11-22,MILABO,,ずっと真夜中でいいのに。,,,J-pop,itunes:3661B90E696E2C7F,2021-03,,,,,,,,1
+2026-11-22,The Everlasting Guilty Crown,,EGOIST,,,Anime,itunes:5EE0541ACC92D8DE,2019-01,,,,,,,,1
+2026-11-22,Planetes,,EGOIST,,,Anime,itunes:E9D93313DF5F58D6,2019-01,,,,,,,,1
+2026-11-22,&Z,,SawanoHiroyuki[nZk]:mizuki,,,J-Pop,itunes:F6216E02AF109E3A,2019-01,,,,,,,,1
+2026-11-22,生命線,,ReoNa,,,Anime,itunes:19385F594288A53D,2022-07,,,,,,,,1
+2026-11-22,ばかじゃないのに,,ずっと真夜中でいいのに。,,,Rock,itunes:652FA9884D7BF59F,2022-04,,,,,,,,1
+2026-11-22,思想犯,,ヨルシカ,,,J-Pop,itunes:C0919A347BE125FF,2021-06,,,,,,,,1
+2026-11-22,金時計,Golden clock,TakoyakiKZY,TakoyakiKZY,TakoyakiKZY,Vocaloid,https://www.youtube.com/watch?v=83M2i2L0pwY,2025-10,1.8,3.9,1.8,2.0,1.0,,,
+2026-11-22,盗作,,ヨルシカ,,,J-Pop,itunes:9E04BAF0059B5B76,2021-06,,,,,,,,1
+2026-11-22,Dear Mr「F」,,ずっと真夜中でいいのに。,,,J-Pop,itunes:7CE59E91E1729143,2019-11,,,,,,,,1
+2026-11-22,"10% roll, 10% romance",,UNISON SQUARE GARDEN,,,Anime,itunes:466966744F176835,2020-01,,,,,,,,1
+2026-11-22,"World's End, Girl's Rondo(Asterisk DnB Remix)",,Asterisk,,,Future Bass,itunes:3B899DF059687115,2019-10,,,,,,,,1
+2026-11-22,Ether Strike ('Divine Mercy' Extended),,Akira Complex,,,Game,itunes:154492C717302B68,2021-01,,,,,,,,1
+2026-11-22,Hype (feat. Such),,PSYQUI,,,Future Bass,itunes:06096622DB41CAD8,2019-04,,,,,,,,1
+2026-11-22,少女レイ,,ragey,,,,itunes:A9CEE6387FAA8143,2021-03,,,,,,,,1
+2026-11-22,Scuffed Up Age,,Mori Calliope,,,VTuber,itunes:DC7189490FF7CBD6,2022-04,,,,,,,,1
+2026-11-22,愛されなくても君がいる,,ピノキオピー Feat. 初音ミク,,,Vocaloid,itunes:77C9F2D8C92D1900,2022-07,,,,,,,,1
+2026-11-22,告白,,supercell,,,Anime,itunes:148BBD76C0D0455C,2018-09,,,,,,,,1
+2026-11-22,Moonlightspeed,,Midnight Grand Orchestra,,,jpop,itunes:24A9D4939B0D7D4F,2023-12,,,,,,,,1
+2026-11-22,UNLOCK,,井口裕香,,,Anime,itunes:1F48C6E228CF1BE9,2018-09,,,,,,,,1
+2026-11-22,えんどろ～る!,,Yuusha Party,,,Anime,itunes:51505D390CD62F4E,2019-05,,,,,,,,1
+2026-11-22,春ひさぎ,,ヨルシカ,,,J-Pop,itunes:9259F5C901A9A75C,2021-06,,,,,,,,1
+2026-11-22,ツギハギスタッカート,,MORE MORE JUMP！,,,Game,itunes:B57E07F28B195C2C,2023-09,,,,,,,,1
+2026-11-22,ハローグッデイ,,LiSA,,,J-Pop,itunes:0BC77670B41E13A5,2019-01,,,,,,,,1
+2026-11-22,Grievous Lady -nothing is but what is not-,,Team Grimoire vs Laur,,,Game,itunes:103F00770190B964,2021-01,,,,,,,,1
+2026-11-22,シャルル,,バルーン,,,Utaite,itunes:E478BFCA463E3096,2020-06,,,,,,,,1
+2026-11-22,Alone,,ReoNa,,,Anime,itunes:D595C6B48E330115,2022-07,,,,,,,,1
+2026-11-22,ロストエンファウンド,,Leo／need,,,JPOP,itunes:3B27B1C158B4ED6B,2024-04,,,,,,,,1
+2026-11-22,ノンブレス・オブリージュ,,ピノキオピー feat. 初音ミク,,,Vocaloid,itunes:D566BE90DA90B646,2022-07,,,,,,,,1
+2026-11-22,ヒーロー,,supercell,,,J-Pop,itunes:D6A98671AFE00EC1,2019-08,,,,,,,,1
+2026-11-22,Mela!,,緑黄色社会,,,J-pop,itunes:0E0DAB756CC84E8C,2021-09,,,,,,,,1
+2026-11-22,初音天地開闢神話,,cosMo@暴走P feat.初音ミク,,,Vocaloid,itunes:AA3BF20BA61F110B,2024-04,,,,,,,,1
+2026-11-22,glow,,keeno Feat. 初音ミク,,,Pop,itunes:AB31139C5DE284DC,2024-04,,,,,,,,1
+2026-11-22,ヒアソビ,,かめりあ feat. 初音ミク,,,Vocaloid,itunes:CF2076D3643B8008,2023-12,,,,,,,,1
+2026-11-22,Andromeda,,星街すいせい,,,J-Pop,itunes:8D32F78937E2B106,2021-09,,,,,,,,1
+2026-11-22,HERO,,Ayase & 初音ミク,,,Vocaloid,itunes:1DB71A311AE6980A,2024-04,,,,,,,,1
+2026-11-22,君という神話,,ホタル,,,Utaite,itunes:5B0E4B6462EF6BD5,2025-08,,,,,,,,1
+2026-11-22,GHOST,,星街すいせい,,,J-Pop,itunes:FE2ABAD25863726F,2021-09,,,,,,,,1
+2026-11-22,はぐ,,MIMI feat. 可不 & 初音ミク,,,Vocaloid,itunes:7028852B4EE21A48,2023-12,,,,,,,,1
+2026-11-22,Now or Never,,ナノ,,,J-Rock,itunes:26AAAC32FE97B27B,2019-01,,,,,,,,1
+2026-11-22,Amazing Trees,,SawanoHiroyuki[nZk]:Tielle,,,J-Pop,itunes:F96C45F05CE291CA,2019-01,,,,,,,,1
+2026-11-22,ずっとずっとずっと,,緑黄色社会,,,J-pop,itunes:C179509EA9001443,2021-09,,,,,,,,1
+2026-11-22,スキスキ絶頂症,,鹿乃,,,Utaite,itunes:FDA3639F11499835,2018-09,,,,,,,,1
+2026-11-22,私は、私達は,,Guiano feat. 可不,,,Vocaloid,itunes:5093CF2994FBEA03,2023-12,,,,,,,,1
+2026-11-22,七千三百とおもちゃのユメ,,三月のパンタシア,,,J-Pop,itunes:2B66190464C01641,2018-09,,,,,,,,1
+2026-11-22,逆光,,Ado,,,,itunes:BBC489694610AA9B,2022-08,,,,,,,,1
+2026-11-22,king妃jack躍,,宮守文学 & 初音ミク,,,Vocaloid,itunes:7B7B3716A2620F43,2024-04,,,,,,,,1
+2026-11-22,ナイトルール,,ホタル,,,Utaite,itunes:217E7D82EEAFA07D,2025-08,,,,,,,,1
+2026-11-22,starlights feat. TEA,,沙野カモメ,,,J-Pop,itunes:EAB6363FFE4832DB,2018-09,,,,,,,,1
+2026-11-22,Own Phrases,,Annabel,,,Game,itunes:EB20BABF69273EBE,2019-02,,,,,,,,1
+2026-11-22,メリーメリ,,鹿乃,,,J-Pop,itunes:C79570403FEA7A71,2018-09,,,,,,,,1
+2026-11-22,ドラマツルギー,,Eve,,,J-pop,itunes:4C9BD5DBEF6E2199,2020-05,,,,,,,,1
+2026-11-22,luminescence Q.E.D.,,分島花音,,,,itunes:DABE37C9863C70B8,2018-09,,,,,,,,1
+2026-11-22,アストロノーツ,Astronauts,れをる,椎名もた,れをる,Vocaloid; Utaite; J-Rock,https://www.youtube.com/watch?v=B776HM2cZWM,2015,2.1,0.8,1.9,3.7,2.5,,"A deeply emotionally charged song. It wasn't long after I listened to this cover that I discovered that it's original producer powapowa-p passed away. It was among the first times I had to confront mortality and impermanence. The song's theme somehow also addresses these themes, with the core theme of regrets originating from one's own weakness. A core memory I have of this song is that it was the song I was listening to while watching the lane markings pass by on the highway moving out to college. I don't know my exact mind state at the time, but I remember the sadness I felt while listening to this song at that moment.",
+2026-11-22,Ghost of a smile,,EGOIST,,,,itunes:1F8A00966DD24491,2019-01,,,,,,,,1
+2026-11-22,ユメウツツ空想論,,かいりきベア feat. 初音ミク,,,Vocaloid,itunes:66A2418336841750,2020-06,,,,,,,,1
+2026-11-22,花弁、それにまつわる音声,,あばらや,,,Vocaloid,itunes:DFBFDAF36DF495D2,2025-08,,,,,,,,1
+2026-11-22,スタンドバイミー,,The Peggies,,,Anime,itunes:83D639FDC30B0838,2019-08,,,,,,,,1
+2026-11-22,サイエンス,,MIMI,,,Vocaloid,itunes:5B64A5EACEC433CB,2025-08,,,,,,,,1
+2026-11-22,DREAMCATCHER,,ナノ,,,Anime,itunes:A50DD128AA8B0AAA,2018-09,,,,,,,,1
+2026-11-22,いのちが見たい,,ぬゆり,,,,itunes:8E4C8879C1521634,2025-08,,,,,,,,1
+2026-11-22,アンノウンマザーグース,,花鋏キョウ＆獅子神レオナ＆流石乃ルキ＆流石乃ロキ,,,Utaite,itunes:5D81C1C8C83DD4CA,2019-10,,,,,,,,1
+2026-11-22,君が笑む夕暮れ,,南條愛乃,,,Anime,itunes:6FD15FF2DFA007E5,2021-06,,,,,,,,1
+2026-11-22,モニタリング,,am2:00cat,,,Utaite,itunes:A95BAA0431212E87,2025-08,,,,,,,,1
+2026-11-22,はじまりの速度,,三月のパンタシア,,三月のパンタシア,J-Pop; Anime,https://www.youtube.com/watch?v=tmOQ-v773VE,2016-04,3.4,1.3,1.9,2.3,2.5,,"My absolute favorite song at the moment I was transitioning to adult life in college. At a critical period in my life, listening to this song really calmed me down, and assured me that no matter how hard things were I was never alone. Listening to it now still retains those sentiments for me.",
+2026-11-22,とまどい→レシピ,,みかくにんぐッ!,,,Anime,itunes:0825C6568A992029,2020-01,,,,,,,,1
+2026-11-22,Koe,,ASCA,,,Anime,itunes:00773D075537DA41,2021-09,,,,,,,,1
+2026-11-22,Till the End,,ReoNa,,,Anime,itunes:D9EE993E8A31F3D6,2022-07,,,,,,,,1
+2026-11-22,ノンブレス・オブリージュ,,Nightcord at 25:00,,,Game,itunes:A7E0A6B1688CABA2,2024-04,,,,,,,,1
+2026-11-22,All Alone With You,,EGOIST,,,Anime,itunes:C6739A9B224F4108,2019-01,,,,,,,,1
+2026-11-22,パノプティコン,,r-906,,,Vocaloid,itunes:8673C9C90D36C95A,2025-08,,,,,,,,1
+2026-11-22,ムリムリ進化論,MURI MURI EVORUTION,ナナヲアカリ,やしきん,ナナヲアカリ,Anime; J-Pop,https://www.youtube.com/watch?v=o4OsvOqHnZM,2026-02,1.5,2.5,1.2,1.6,1.7,,,
+2026-11-22,羽ばたきのバースデイ,,Baby’s breath,,,Anime,itunes:E78873D6D4078B33,2018-09,,,,,,,,1
+2026-11-22,好感win-win無条件,,ハート♡インベーダー,,,Anime,itunes:D3F289A39DE9506C,2018-09,,,,,,,,1
+2026-11-22,Now Loading!!!!,,fourfolium,,,Anime,itunes:6B5D696C44AB2B36,2018-09,,,,,,,,1
+2026-11-22,アイロニ,,鹿乃,,,Utaite,itunes:693CD5074CEC2522,2018-09,,,,,,,,1
+2026-11-22,地球の裏_深水さや,,深水さや,,,Utaite,itunes:B438936B8457F0D6,2024-11,,,,,,,,1
+2026-11-22,オオカミ少年独白,A Soliloquy of The Boy who Cried Wolf,Cana(Sotte Bosse),sasakure.UK,sasakure.UK,J-Pop,https://www.youtube.com/watch?v=qHuil14X4o0,2014-01,2.7,2.2,2.9,3.1,3.6,,"Song aged amazingly. A charming adaptation of ""The Boy who Cried Wolf"" as part of sasakure.uk's concept album ""The Fantastic Reality of Aesop"". Simple instrumentation and motifs capture the innocence of the protagonist. The bridge captures a somewhat clumsy yet sad regret, but the simple innocence continues, epitomized by the ""ああだいきらいです"" at the end.",
+2026-11-22,少女のみぞ知る,,花隈千冬,,,Vocaloid,itunes:EE3594D8A2E1C2F7,2025-12,,,,,,,,1
+2026-11-22,罪の名前,,ゆいこんぬ,,,,itunes:E54A1927AF04AAA4,2018-09,,,,,,,,1
+2026-11-22,タイニーバニー,,ホタル,,,Utaite,itunes:47919F432F1EC417,2025-08,,,,,,,,1
+2026-11-22,signal,,分島花音,,,J-Pop,itunes:44B659DFCBA724B1,2018-09,,,,,,,,1
+2026-11-22,コレカラ,,Machico,,,Anime,itunes:1077FC8A76E43ECE,2020-01,,,,,,,,1
+2026-11-22,ワーストリグレット,,youまん,,,Vocaloid,itunes:7235FF63320EA622,2025-08,,,,,,,,1
+2026-11-22,マージナルソウル,,youまん,,,Vocaloid,itunes:D54BF156E6499B70,2025-08,,,,,,,,1
+2026-11-22,エンドレスライン,,れをる,,,J-Pop,itunes:6CECC23C74263CA5,2018-09,,,,,,,,1
+2026-11-22,METEOR,,DIVELA feat. 初音ミク,,,Vocaloid,itunes:EBC3B0B00A557238,2020-06,,,,,,,,1
+2026-11-22,Currant,,むﾄ,,,Utaite,itunes:08434D30F99B4EC7,2026-07,,,,,,,,1
+2026-11-22,妄想税,Mousouzei;Delusion Tax,れをる,DECO*27,れをる,Utaite; Vocaloid; J-Rock,https://www.youtube.com/watch?v=lYo4jUqGqAQ,2015,3.0,1.7,3.3,1.8,3.4,,"I would say this song was actually the genesis to my interest in music in general. So basically what happened is probably somewhere in 2012 at the beginning of high school, I feel asleep on the sofa while watching some livestream. When I eventually woke up some time past midnight, the stream I was watching ended and ended up hosting this other stream of a guy playing some modded level of I wanna be the boshy with the original vocaloid version of this song playing. It was my first real exposure to vocaloid, and I dug it. After that time, I didn't know what game or song it was, but it was always a question in the back of my mind what song that was. It wasn't until roughly 2015 after already being engrossed in Japanese music that while listening to REOL songs, I rediscovered this song.
+
+Anyways, all around catchy, and the added rap sections are actual bangers. They really somehow snuck in the credits into the song lol.",
+2026-11-22,恋のヒメヒメぺったんこ,,＊なみりん,,,Utaite,itunes:DA15F3BB4FE9AF51,2018-09,,,,,,,,1
+2026-11-22,adrenaline!!!,,TrySail,,,Anime,itunes:A990A83757A5DB4E,2018-09,,,,,,,,1
+2026-11-22,ツインテール・ドリーマー!,,Twintails,,,Anime,itunes:CEF0D50093616FE6,2020-01,,,,,,,,1
+2026-11-22,echo,,higma,,,Vocaloid,itunes:069A244AE29BB654,2025-12,,,,,,,,1
+2026-11-22,ももいろの鍵,,いよわ,,,Vocaloid,itunes:57122416DDC0C0EC,2025-08,,,,,,,,1
+2026-11-22,SeventH-HeaveN,,sasakure.UK Feat. 初音ミク,,,J-pop,itunes:D08CF0B58301616A,2025-08,,,,,,,,1
+2026-11-22,Supernova,,MORE MORE JUMP!,,,Game,itunes:FA94DA7EA526EF59,2025-12,,,,,,,,1
+2026-11-22,Reply,,kz  & Kaguya(cv.Yuko Natsuyoshi),,,Anime,itunes:07BCAD7AF21D3F72,2026-07,,,,,,,,1
+2026-11-22,Astral tale,,Noah,,,Game,itunes:8E8AD7968A91AF84,2021-01,,,,,,,,1
+2026-11-22,Alice's Suitcase,,Endorfin.,,,Game,itunes:3ACAD97E04EB7D85,2023-01,,,,,,,,1
+2026-11-22,ハッピーシンセサイザ,,MORE MORE JUMP！,,,Game,itunes:2B7341471B3D0109,2023-09,,,,,,,,1
+2026-11-22,ウィーニーウォーカー,,youまん,,,Vocaloid,itunes:8DE10C4E0FA27087,2025-08,,,,,,,,1
+2026-11-22,幸世界,,むﾄ,,,Utaite,itunes:D6D2023618EE5F90,2026-07,,,,,,,,1
+2026-11-22,スピラ,spira,𓆑,椎乃味醂,𓆑,J-Rock; Utaite; Electronic,https://www.youtube.com/watch?v=uROyQOwLQoM,2026-08,1.3,2.1,2.8,1.4,2.2,,,
+2026-11-22,Auxesia (Extended ver.),,ginkiha,,,Game,itunes:0AD0BBD9BF0723CC,2021-01,,,,,,,,1
+2026-11-22,flos (Remix ver.),,むﾄ,,,Utaite,itunes:A2FBAC4882D772B1,2026-07,,,,,,,,1
+2026-11-22,少女のみぞ知る,,阿修,,,Vocaloid,itunes:66DC2E4A691C3A38,2026-07,,,,,,,,1
+2026-11-22,Melt (Kaguya Ver.) [CPK! Remix],,ryo(supercell) & Kaguya(cv.Yuko Natsuyoshi),,,Anime,itunes:8E5DD5AB3D008F85,2026-07,,,,,,,,1
+2026-11-22,うまぴょい伝説,,ななひら,,,J-Pop,itunes:1E8EE71376E94377,2021-06,,,,,,,,1
+2026-11-22,ギラギラ,,Ado,,,J-Pop,itunes:FBF566D5C8A7A9B8,2022-07,,,,,,,,1
+2026-11-22,ゾイトロープ,,youまん,,,Vocaloid,itunes:0DD729036BE0353C,2025-08,,,,,,,,1
+2026-11-22,IRIS OUT,,むﾄ,,,Utaite,itunes:A9F1DC8AC390F220,2026-07,,,,,,,,1
+2026-11-22,春嵐,,むﾄ,,,Utaite,itunes:E77E511287817056,2026-07,,,,,,,,1
+2026-11-22,死生観にさよなら,,むﾄ,,,Utaite,itunes:E834CFFA47005C45,2026-07,,,,,,,,1
+2026-11-22,限りなく灰色へ,Kagirinaku Haiiro e;Infinitely Gray,東雲絵名,すりぃ,東雲絵名,Game; Utaite; Vocaloid,https://www.youtube.com/watch?v=VsCfBIPgGu8,2025-11,3.5,1.6,1.2,4.4,1.4,,"I'll never know if I really was depressed, but if I was, this song really captures that feeling for me. Envy, wasted potential, imposter syndrome, and an outlook that feels completely devoid of color. Two lines in particular resonate with me. ""まだ人生終わっていない"" 諦めんなって誰かの声"", where words of encouragement ring hollow, and somehow have the opposite affect. As if knowing people have hopes in you remind you that you are letting everyone, including yourself down. ""この感情奪って去ってよ"", capturing the feeling that nevertheless, these feelings are deeply ingrained, hurting while also being grasped at as a form of desperate comfort. It's a cry for help, while paradoxically shrugging away the encouragement you already receive.",
+2026-11-22,そこに在る、光。,,25時、ナイトコードで。,DECO*27,25時、ナイトコードで。,Game; Electronic,https://www.youtube.com/watch?v=WkGgD_RF5V8,2026-05,1.1,1.5,3.6,3.5,2.3,,,
+2026-11-22,ポストシェルター,,稲葉曇 feat. 歌愛ユキ,,,Vocaloid,itunes:83682712059BE846,2022-07,,,,,,,,1
+2026-11-22,レディメイド,,Ado,,,J-Pop,itunes:C173037CB8136688,2022-07,,,,,,,,1
+2026-11-22,AI[UE]OON,,MYUKKE.,,,Game,itunes:79CADCEE9A546BDD,2023-01,,,,,,,,1
+2026-11-22,ホロウ,,むﾄ,,,Utaite,itunes:A72BC5767A168786,2026-07,,,,,,,,1
+2026-11-22,プロポーズ,,むﾄ,,,Utaite,itunes:E3283506DCE322F7,2026-07,,,,,,,,1
+2026-11-22,散歩の邪魔,Everything,羽澄さひろ,いよわ,羽澄さひろ,Utaite; Vocaloid; J-Pop,https://www.youtube.com/watch?v=KLgFODOrqp4,2026-08,3.2,2.8,0.8,0.9,4.0,,,
+2026-11-22,快眠! 安眠! スヤリスト生活,,水瀬いのり,,,Anime,itunes:9332A787204E9316,2021-09,,,,,,,,1
+2026-11-22,corps-sans-organes (Extended ver.),,cybermiso,,,Game,itunes:F76B9DBA1C177B4F,2023-01,,,,,,,,1

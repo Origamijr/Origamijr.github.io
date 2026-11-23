@@ -68,14 +68,18 @@ function markdownToHtml(src) {
 
     // Apply inline markdown (links, images, code, bold, italic) after escaping
     function inlineEscape(s) {
+        // URLs and code spans are set aside so bold/italic markers (e.g. "_" in filenames) don't touch them
+        const kept = [];
+        const keep = t => `\x01${kept.push(t) - 1}\x01`;
         return escape(s)
-            .replace(/!\[([^\]]*)]\(([^)]+)\)/g, '<img alt="$1" src="$2">')
-            .replace(/\[([^\]]+)]\(([^)]+)\)/g, '<a href="$2">$1</a>')
-            .replace(/`([^`]+)`/g, '<code>$1</code>')
+            .replace(/`([^`]+)`/g, (_, code) => keep(`<code>${code}</code>`))
+            .replace(/!\[([^\]]*)]\(([^)]+)\)/g, (_, alt, src) => `<img alt="${alt}" src="${keep(src)}">`)
+            .replace(/\[([^\]]+)]\(([^)]+)\)/g, (_, text, href) => `<a href="${keep(href)}">${text}</a>`)
             .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
             .replace(/__([^_]+)__/g, '<strong>$1</strong>')
             .replace(/\*([^*]+)\*/g, '<em>$1</em>')
-            .replace(/_([^_]+)_/g, '<em>$1</em>');
+            .replace(/_([^_]+)_/g, '<em>$1</em>')
+            .replace(/\x01(\d+)\x01/g, (_, i) => kept[i]);
     }
 
     // Reverse escape() to recover plain text

@@ -32,6 +32,10 @@
                         <div id="post-tags" class="post-tags"></div>
                     </div>
                     <article id="post-content" class="markdown-content"></article>
+                    <section id="mentioned-by" class="mentioned-by" style="display: none;">
+                        <h3>Mentioned by</h3>
+                        <ul id="mentioned-by-list"></ul>
+                    </section>
                 </div>
             </main>
             
@@ -82,6 +86,74 @@
                 console.error('Error loading blog metadata:', e);
                 return [];
             }
+        }
+
+        // Find a post from a URL/link reference: current slug, then an old slug (alias), then filename
+        function findPost(ref) {
+            if (!ref) return null;
+            const file = ref.endsWith('.md') ? ref : ref + '.md';
+            return allPosts.find(p => p.slug === ref)
+                || allPosts.find(p => (p.aliases || []).includes(ref))
+                || allPosts.find(p => p.filename === ref || p.filename === file)
+                || null;
+        }
+
+        // Relative URL so it works both locally and on GitHub Pages
+        function postUrl(post, hash = '') {
+            return `?post=${encodeURIComponent(post.slug)}${hash}`;
+        }
+
+        function formatDate(date) {
+            return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        }
+
+        function isPlainClick(e) {
+            return e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey;
+        }
+
+        // Make a link open a post in-page, while still allowing ctrl/middle-click to open a new tab
+        function linkToPost(a, post, hash = '') {
+            a.href = postUrl(post, hash);
+            a.addEventListener('click', (e) => {
+                if (!isPlainClick(e)) return;
+                e.preventDefault();
+                showBlogPost(post, hash);
+            });
+        }
+
+        // Rewrite markdown links like [text](blog:20260528_peda.md#section) to the target post's current URL
+        function resolveBlogLinks(container) {
+            container.querySelectorAll('a[href^="blog:"]').forEach(a => {
+                const [ref, section] = a.getAttribute('href').slice(5).split('#');
+                const target = findPost(ref.trim());
+                if (target) {
+                    linkToPost(a, target, section ? `#${section}` : '');
+                } else {
+                    console.warn(`Unknown blog link: ${a.getAttribute('href')}`);
+                    a.removeAttribute('href');
+                    a.classList.add('broken-link');
+                    a.title = 'Post not found';
+                }
+            });
+        }
+
+        function buildMentionedBy(post) {
+            const section = document.getElementById('mentioned-by');
+            const list = document.getElementById('mentioned-by-list');
+            list.innerHTML = '';
+            const sources = (post.mentioned_by || []).map(findPost).filter(Boolean);
+            sources.forEach(src => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.textContent = src.title;
+                linkToPost(a, src);
+                const time = document.createElement('time');
+                time.className = 'post-date';
+                time.textContent = formatDate(src.date);
+                li.append(a, time);
+                list.appendChild(li);
+            });
+            section.style.display = sources.length ? '' : 'none';
         }
 
         function buildTagsFilter() {
@@ -215,9 +287,9 @@
 
             const container = document.getElementById('posts-list');
             container.innerHTML = pagePosts.map(post => `
-                <article class="blog-post" data-filename="${encodeURIComponent(post.filename)}">
-                    <h2><a href="#">${escapeHtml(post.title)}</a></h2>
-                    <time class="post-date">${post.update ? `Updated ${new Date(post.update).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}` : new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                <article class="blog-post" data-filename="${escapeHtml(post.filename)}">
+                    <h2><a href="${escapeHtml(postUrl(post))}">${escapeHtml(post.title)}</a></h2>
+                    <time class="post-date">${post.update ? `Updated ${formatDate(post.update)}` : formatDate(post.date)}</time>
                     <p class="post-preview">${escapeHtml(post.preview)}</p>
                     <div class="post-tags">
                         ${post.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
@@ -225,12 +297,13 @@
                 </article>
             `).join('');
 
-            // Attach click handlers to posts
+            // Attach click handlers to posts (ctrl/middle-click on the title still opens a new tab)
             container.querySelectorAll('.blog-post').forEach(el => {
+                const post = allPosts.find(p => p.filename === el.getAttribute('data-filename'));
                 el.addEventListener('click', (e) => {
+                    if (e.target.closest('a') && !isPlainClick(e)) return;
                     e.preventDefault();
-                    const filename = el.getAttribute('data-filename');
-                    showBlogPost(decodeURIComponent(filename));
+                    showBlogPost(post);
                 });
             });
 
@@ -398,7 +471,10 @@
             }
         }
 
-        async function showBlogPost(filename, hash = '') {
+        // Show a post (metadata object). `replace` swaps the history entry instead of adding one
+        // (used for initial load, back/forward, and redirecting old URLs to the current slug).
+        async function showBlogPost(post, hash = '', replace = false) {
+            const filename = post.filename;
             try {
                 let content;
                 let response = await fetch(`assets/markdown/blog/${filename}`);
@@ -417,12 +493,9 @@
                 }
                 
                 const { html, headers } = markdownToHtml(content);
-                
-                // Find post metadata
-                const post = allPosts.find(p => p.filename === filename);
-                
+
                 // Populate post header
-                if (post) {
+                {
                     document.getElementById('post-title').textContent = post.title;
                     
                     // Show both creation and update dates
@@ -448,12 +521,15 @@
                     }
                 }
                 
-                document.getElementById('post-content').innerHTML = html;
+                const postContent = document.getElementById('post-content');
+                postContent.innerHTML = html;
+                resolveBlogLinks(postContent);
+                buildMentionedBy(post);
                 buildToc(headers);
                 document.getElementById('view-list').style.display = 'none';
                 document.getElementById('view-post').style.display = 'block';
 
-                window.history.pushState(null, '', `?post=${encodeURIComponent(filename)}${hash}`);
+                window.history[replace ? 'replaceState' : 'pushState'](null, '', postUrl(post, hash));
                 const section = hash && document.getElementById(decodeURIComponent(hash.slice(1)));
                 if (section) {
                     section.scrollIntoView();
@@ -500,7 +576,14 @@
             window.addEventListener('scroll', updateActiveToc, { passive: true });
 
             if (postFromUrl) {
-                await showBlogPost(postFromUrl, window.location.hash);
+                const post = findPost(postFromUrl);
+                if (post) {
+                    // Old slugs / filenames are rewritten to the post's current URL
+                    await showBlogPost(post, window.location.hash, true);
+                } else {
+                    document.getElementById('posts-list').insertAdjacentHTML('beforebegin',
+                        `<p class="error">Couldn't find the post "${escapeHtml(postFromUrl)}".</p>`);
+                }
             }
 
             // Search
@@ -518,9 +601,9 @@
 
             // Handle browser back button
             window.addEventListener('popstate', () => {
-                const post = getPostFromUrl();
+                const post = findPost(getPostFromUrl());
                 if (post) {
-                    showBlogPost(post, window.location.hash);
+                    showBlogPost(post, window.location.hash, true);
                 } else {
                     showBlogList();
                 }

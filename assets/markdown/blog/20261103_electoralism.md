@@ -1,7 +1,8 @@
 ---
 title: The Chasm of Democracy
 date: 2026-11-03
-tags: [philosophy, opinion]
+update: 2026-11-22
+tags: philosophy
 ---
 
 As I type this at 2 a.m. in the morning, I am simultaneously excited and terrified to know the results of the midterm elections today/tomorrow. While most coverage seems to indicate a degree of political blowback, signaling a future where Trump can actually be put in check, it also spotlighted several faults in the electoral system.
@@ -79,3 +80,9 @@ In ways, it would seem that the easiest way to form a more perfect democracy is 
 Within 24 hours, we'll likely see the results of the current midterm elections. In a way, this feels like our last chance at preserving the current system of democracy. Yet, in the back of my mind, I question if the current form of democracy should be preserved. At the very least, maybe abolishing the senate, and ridding ourselves of first past the post voting should probably be floated, but I can't forsee that changing without a drastic change in the political landscape.
 
 *and no, a government by AI is not the solution*
+
+## [EDIT] Post-election reflection
+
+While it's hard to tell the exact cause of the election results, at the very least the results seem to show that to an extent democracy is still holding on. Many results seemed to go against the flow of capital spending on campaigns, which optimistically shows the limited affect capitalism has on our electoral system, or pessimistically only suggests that there is a cap to the extent of it's influence.
+
+In retrospect, I think I might be a bit doomer in this post. I'm a bit fearful that the stances I take in this poste suggest that the desirable outcome is authoritarianism to supplant democracy the same way tech billionaires seem to claim faults in the current system. I want to make clear that my sentiment here is that democracy is desirable, but the current system of democracy is not fully democratic, and a shift to ideal democracy could necessitate undemocratic actions. It's an entirely separate conversation if ideal democracy is even possible on the scale of the US and if not what compromises are permissible (and if not what the ideal form of practical governance would be). In effect, it's just a question of the efficacy of electoralism to fix electoralism. But I'll leave this discussion here, and observe what'll happen in the next 2-6 years.
